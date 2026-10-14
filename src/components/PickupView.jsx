@@ -122,7 +122,7 @@ export default function PickupView({ product, onClose, onAdd, isDesktop, reduced
   return (
     <div className="absolute inset-0 z-30 flex flex-col md:flex-row animate-fade-in bg-ivory-100">
       {/* 3D — fixed half-screen canvas on phones, flexible on desktop */}
-      <div className="relative shrink-0 h-[50dvh] min-h-[280px] md:h-auto md:min-h-0 md:flex-1 bg-ivory-100">
+      <div className="pickup-canvas relative shrink-0 md:h-auto md:min-h-0 md:flex-1 bg-ivory-100">
         {glOk ? (
           <Canvas
             key={canvasKey}

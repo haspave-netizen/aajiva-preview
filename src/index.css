@@ -77,11 +77,24 @@ body {
 .entrance-tagline {
   font-size: clamp(1rem, 4.6vw, 1.25rem);
 }
-/* short viewports (landscape phones): tighten entrance padding */
+/* pick-up 3D pane: fixed half-screen on phones (md:h-auto/md:flex-1 take over on desktop) */
+@media (max-width: 767.98px) {
+  .pickup-canvas {
+    height: 50dvh;
+    min-height: 240px;
+  }
+}
+/* short viewports (landscape phones): tighten entrance padding, leave room for the pick-up sheet */
 @media (max-height: 520px) {
   .entrance-tight {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+}
+@media (max-width: 767.98px) and (max-height: 520px) {
+  .pickup-canvas {
+    height: 44dvh;
+    min-height: 170px;
   }
 }
 
