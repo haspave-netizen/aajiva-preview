@@ -5,6 +5,7 @@ import { OrbitControls } from '@react-three/drei';
 import { RoomEnvironment } from 'three-stdlib';
 import { JewelryModel, MODEL_LABELS } from '../three/models';
 import { pickupFov } from '../three/cameraFit';
+import { ContextGuard, webglSupported } from '../hooks/useWebgl';
 import { formatINR } from '../data/products';
 
 function LocalEnv() {
@@ -94,6 +95,10 @@ function Scene({ product, isDesktop, reducedMotion }) {
 export default function PickupView({ product, onClose, onAdd, isDesktop, reducedMotion }) {
   const [flipped, setFlipped] = useState(false);
   const [added, setAdded] = useState(false);
+  const [glLost, setGlLost] = useState(false);
+  const [canvasKey, setCanvasKey] = useState(0);
+  const glRef = useRef(null);
+  const glOk = webglSupported() && !glLost;
   const isTouch =
     typeof window !== 'undefined' &&
     (navigator.maxTouchPoints > 0 || 'ontouchstart' in window);
@@ -104,18 +109,51 @@ export default function PickupView({ product, onClose, onAdd, isDesktop, reduced
     setTimeout(() => setAdded(false), 1600);
   };
 
+  const retryGl = () => {
+    try {
+      glRef.current?.forceContextRestore();
+    } catch {
+      /* remount covers it */
+    }
+    setGlLost(false);
+    setCanvasKey((k) => k + 1);
+  };
+
   return (
     <div className="absolute inset-0 z-30 flex flex-col md:flex-row animate-fade-in bg-ivory-100">
       {/* 3D — fixed half-screen canvas on phones, flexible on desktop */}
       <div className="relative shrink-0 h-[50dvh] min-h-[280px] md:h-auto md:min-h-0 md:flex-1 bg-ivory-100">
-        <Canvas
-          dpr={[1, isDesktop ? 1.75 : 1.25]}
-          shadows={isDesktop}
-          gl={{ antialias: true }}
-          camera={{ fov: 42, near: 0.1, far: 40, position: [0, 0.7, 4.2] }}
-        >
-          <Scene product={product} isDesktop={isDesktop} reducedMotion={reducedMotion} />
-        </Canvas>
+        {glOk ? (
+          <Canvas
+            key={canvasKey}
+            dpr={[1, isDesktop ? 1.75 : 1.25]}
+            shadows={isDesktop}
+            gl={{ antialias: true }}
+            camera={{ fov: 42, near: 0.1, far: 40, position: [0, 0.7, 4.2] }}
+          >
+            <ContextGuard
+              glRef={glRef}
+              onLost={() => setGlLost(true)}
+              onRestored={() => setGlLost(false)}
+            />
+            <Scene product={product} isDesktop={isDesktop} reducedMotion={reducedMotion} />
+          </Canvas>
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center p-6">
+            <div className="text-center max-w-xs rounded-2xl bg-white border border-silver-300/70 shadow-md p-6">
+              <p className="font-display text-xl text-charcoal-900">3D preview unavailable</p>
+              <p className="text-[13px] text-charcoal-700/70 mt-1 leading-relaxed">
+                The 3D view couldn't start on this device — the details and Add to tray below still work.
+              </p>
+              <button
+                onClick={retryGl}
+                className="mt-3 rounded-full bg-charcoal-900 text-ivory-50 px-6 min-h-[44px] text-xs font-bold tracking-[0.2em] uppercase hover:bg-charcoal-800 transition-colors"
+              >
+                Try 3D again
+              </button>
+            </div>
+          </div>
+        )}
         <button
           onClick={onClose}
           aria-label="Back to the shop"
@@ -124,9 +162,11 @@ export default function PickupView({ product, onClose, onAdd, isDesktop, reduced
         >
           ←
         </button>
-        <p className="absolute bottom-3 inset-x-0 text-center text-[11px] tracking-[0.2em] uppercase text-charcoal-700/60">
-          {isTouch ? 'Drag to turn · Pinch to zoom' : 'Drag to turn · Scroll to zoom'}
-        </p>
+        {glOk && (
+          <p className="absolute bottom-3 inset-x-0 text-center text-[11px] tracking-[0.2em] uppercase text-charcoal-700/60">
+            {isTouch ? 'Drag to turn · Pinch to zoom' : 'Drag to turn · Scroll to zoom'}
+          </p>
+        )}
       </div>
 
       {/* details sheet — scrollable, Add-to-tray pinned at the bottom */}
