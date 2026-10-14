@@ -58,6 +58,17 @@ function CameraRig({ zoneId, entered, reducedMotion }) {
   return null;
 }
 
+/* Spot with an explicit in-scene target so it actually aims. */
+function Spot({ position, target, ...props }) {
+  const tgt = useMemo(() => new THREE.Object3D(), []);
+  return (
+    <>
+      <primitive object={tgt} position={target} />
+      <spotLight position={position} target={tgt} {...props} />
+    </>
+  );
+}
+
 /* Storefront sign drawn locally on a canvas texture. */
 function SignTexture() {
   return useMemo(() => {
@@ -351,10 +362,10 @@ export default function BoutiqueScene({ zoneId, entered, onPick, isDesktop, redu
       {/* lighting — boutique warmth */}
       <ambientLight intensity={0.45} />
       <hemisphereLight args={['#fff6e8', '#8a7a5e', 0.35]} />
-      <spotLight position={[0, 4.2, 0]} angle={0.7} penumbra={0.6} intensity={isDesktop ? 90 : 45} color="#ffe8c4" castShadow={isDesktop} shadow-mapSize={[1024, 1024]} target-position={[0, 1, 0]} />
-      <spotLight position={[-7, 4, -2]} angle={0.6} penumbra={0.7} intensity={isDesktop ? 50 : 25} color="#ffe0b8" target-position={[-9, 1, -2]} />
-      <spotLight position={[0, 4, -5]} angle={0.6} penumbra={0.7} intensity={isDesktop ? 50 : 25} color="#ffe0b8" target-position={[0, 1.3, -6.8]} />
-      <spotLight position={[5.5, 4, 0.3]} angle={0.55} penumbra={0.7} intensity={isDesktop ? 60 : 30} color="#ffe8c4" target-position={[6.5, 1, 0.3]} />
+      <Spot position={[0, 4.2, 0]} target={[0, 1, 0]} angle={0.7} penumbra={0.6} intensity={isDesktop ? 90 : 45} color="#ffe8c4" castShadow={isDesktop} shadow-mapSize={[1024, 1024]} />
+      <Spot position={[-7, 4, -2]} target={[-9, 1, -2]} angle={0.6} penumbra={0.7} intensity={isDesktop ? 50 : 25} color="#ffe0b8" />
+      <Spot position={[0, 4, -5]} target={[0, 1.3, -6.8]} angle={0.6} penumbra={0.7} intensity={isDesktop ? 50 : 25} color="#ffe0b8" />
+      <Spot position={[5.5, 4, 0.3]} target={[6.5, 1, 0.3]} angle={0.55} penumbra={0.7} intensity={isDesktop ? 60 : 30} color="#ffe8c4" />
       <pointLight position={[-5.6, 2.6, 3.4]} color="#ffd9a8" intensity={isDesktop ? 22 : 12} distance={9} />
       <pointLight position={[0, 2.4, 8.6]} color="#ffd9a8" intensity={isDesktop ? 16 : 9} distance={8} />
 

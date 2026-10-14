@@ -26,10 +26,6 @@ function LocalEnv() {
 function Turntable({ children, auto }) {
   const ref = useRef();
   const [grabbed, setGrabbed] = useState(false);
-  useEffect(() => {
-    const el = ref.current;
-    return undefined;
-  }, []);
   useFrame((_, dt) => {
     if (ref.current && auto && !grabbed) ref.current.rotation.y += dt * 0.7;
   });
