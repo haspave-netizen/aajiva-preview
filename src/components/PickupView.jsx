@@ -98,7 +98,10 @@ export default function PickupView({ product, onClose, onAdd, isDesktop, reduced
   const [glLost, setGlLost] = useState(false);
   const [canvasKey, setCanvasKey] = useState(0);
   const glRef = useRef(null);
-  const glOk = webglSupported() && !glLost;
+  // feature-detect once per mount — creating throwaway canvases on every
+  // render would itself pressure the GPU context budget
+  const [supported] = useState(webglSupported);
+  const glOk = supported && !glLost;
   const isTouch =
     typeof window !== 'undefined' &&
     (navigator.maxTouchPoints > 0 || 'ontouchstart' in window);
