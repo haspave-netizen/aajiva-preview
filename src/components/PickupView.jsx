@@ -4,6 +4,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { RoomEnvironment } from 'three-stdlib';
 import { JewelryModel, MODEL_LABELS } from '../three/models';
+import { pickupFov } from '../three/cameraFit';
 import { formatINR } from '../data/products';
 
 function LocalEnv() {
@@ -19,6 +20,19 @@ function LocalEnv() {
       pmrem.dispose();
     };
   }, [gl, scene]);
+  return null;
+}
+
+/* Widen the pick-up camera on portrait screens so the piece stays in frame. */
+function PickupFraming() {
+  const { camera, size } = useThree();
+  useEffect(() => {
+    const fov = pickupFov(size.width / Math.max(size.height, 1));
+    if (Math.abs(camera.fov - fov) > 0.01) {
+      camera.fov = fov;
+      camera.updateProjectionMatrix();
+    }
+  }, [camera, size.width, size.height]);
   return null;
 }
 
@@ -43,6 +57,7 @@ function Scene({ product, isDesktop, reducedMotion }) {
   return (
     <>
       <LocalEnv />
+      <PickupFraming />
       <color attach="background" args={['#f6f1e7']} />
       <ambientLight intensity={0.5} />
       <spotLight position={[2.5, 4, 3]} angle={0.6} penumbra={0.7} intensity={isDesktop ? 70 : 35} color="#ffe8c4" />
@@ -79,6 +94,9 @@ function Scene({ product, isDesktop, reducedMotion }) {
 export default function PickupView({ product, onClose, onAdd, isDesktop, reducedMotion }) {
   const [flipped, setFlipped] = useState(false);
   const [added, setAdded] = useState(false);
+  const isTouch =
+    typeof window !== 'undefined' &&
+    (navigator.maxTouchPoints > 0 || 'ontouchstart' in window);
 
   const handleAdd = () => {
     onAdd(product.id);
@@ -87,9 +105,9 @@ export default function PickupView({ product, onClose, onAdd, isDesktop, reduced
   };
 
   return (
-    <div className="absolute inset-0 z-30 flex flex-col md:flex-row animate-fade-in">
-      {/* 3D */}
-      <div className="relative flex-1 min-h-[46%] md:min-h-0 bg-ivory-100">
+    <div className="absolute inset-0 z-30 flex flex-col md:flex-row animate-fade-in bg-ivory-100">
+      {/* 3D — fixed half-screen canvas on phones, flexible on desktop */}
+      <div className="relative shrink-0 h-[50dvh] min-h-[280px] md:h-auto md:min-h-0 md:flex-1 bg-ivory-100">
         <Canvas
           dpr={[1, isDesktop ? 1.75 : 1.25]}
           shadows={isDesktop}
@@ -101,66 +119,73 @@ export default function PickupView({ product, onClose, onAdd, isDesktop, reduced
         <button
           onClick={onClose}
           aria-label="Back to the shop"
-          className="absolute top-4 left-4 rounded-full bg-charcoal-900/85 text-ivory-50 w-10 h-10 flex items-center justify-center text-lg hover:bg-charcoal-800"
+          className="absolute left-4 rounded-full bg-charcoal-900/85 text-ivory-50 w-11 h-11 flex items-center justify-center text-lg hover:bg-charcoal-800"
+          style={{ top: 'max(1rem, env(safe-area-inset-top))' }}
         >
           ←
         </button>
         <p className="absolute bottom-3 inset-x-0 text-center text-[11px] tracking-[0.2em] uppercase text-charcoal-700/60">
-          Drag to turn · Scroll to zoom
+          {isTouch ? 'Drag to turn · Pinch to zoom' : 'Drag to turn · Scroll to zoom'}
         </p>
       </div>
 
-      {/* price tag card */}
-      <div className="flex-1 md:max-w-md bg-ivory-50 border-t md:border-t-0 md:border-l border-silver-300/60 p-6 md:p-8 flex flex-col overflow-y-auto thin-scroll">
-        <p className="text-[11px] tracking-[0.35em] uppercase text-sage-600 font-bold">
-          {MODEL_LABELS[product.model]} · 925 Sterling Silver
-        </p>
-        <h2 className="font-display text-2xl md:text-3xl text-charcoal-900 mt-2 leading-snug">
-          {product.name}
-        </h2>
-        <p className="font-serif-alt italic text-charcoal-700 mt-2">{product.blurb}</p>
+      {/* details sheet — scrollable, Add-to-tray pinned at the bottom */}
+      <div className="flex-1 min-h-0 md:max-w-md bg-ivory-50 border-t md:border-t-0 md:border-l border-silver-300/60 flex flex-col overflow-hidden">
+        <div className="flex-1 overflow-y-auto thin-scroll p-5 md:p-8">
+          <p className="text-[11px] tracking-[0.35em] uppercase text-sage-600 font-bold">
+            {MODEL_LABELS[product.model]} · 925 Sterling Silver
+          </p>
+          <h2 className="font-display text-xl min-[400px]:text-2xl md:text-3xl text-charcoal-900 mt-2 leading-snug">
+            {product.name}
+          </h2>
+          <p className="font-serif-alt italic text-charcoal-700 mt-2">{product.blurb}</p>
 
-        <div className={`flip-scene mt-5 ${flipped ? 'flipped' : ''}`}>
-          <div className="flip-inner relative min-h-44">
-            {/* front: price */}
-            <div className="flip-face rounded-2xl bg-white border border-silver-300/70 p-5 shadow-md">
-              <div className="flex items-baseline gap-3">
-                <span className="font-display text-3xl text-charcoal-900">{formatINR(product.price)}</span>
-                {product.mrp && (
-                  <span className="text-silver-500 line-through text-lg">{formatINR(product.mrp)}</span>
-                )}
+          <div className={`flip-scene mt-4 md:mt-5 ${flipped ? 'flipped' : ''}`}>
+            <div className="flip-inner relative min-h-40 md:min-h-44">
+              {/* front: price */}
+              <div className="flip-face rounded-2xl bg-white border border-silver-300/70 p-4 min-[400px]:p-5 shadow-md">
+                <div className="flex items-baseline gap-3 flex-wrap">
+                  <span className="font-display text-2xl min-[400px]:text-3xl text-charcoal-900">{formatINR(product.price)}</span>
+                  {product.mrp && (
+                    <span className="text-silver-500 line-through text-base min-[400px]:text-lg">{formatINR(product.mrp)}</span>
+                  )}
+                </div>
+                <p className="text-[12px] text-charcoal-700/70 mt-1">Skin-safe · made for everyday wear</p>
+                <button
+                  onClick={() => setFlipped(true)}
+                  className="mt-3 text-[12px] font-bold tracking-[0.2em] uppercase text-sage-600 underline underline-offset-4"
+                >
+                  Flip the tag ↻
+                </button>
               </div>
-              <p className="text-[12px] text-charcoal-700/70 mt-1">Skin-safe · made for everyday wear</p>
-              <button
-                onClick={() => setFlipped(true)}
-                className="mt-3 text-[12px] font-bold tracking-[0.2em] uppercase text-sage-600 underline underline-offset-4"
-              >
-                Flip the tag ↻
-              </button>
-            </div>
-            {/* back: details */}
-            <div className="flip-face flip-back absolute inset-0 rounded-2xl bg-charcoal-900 text-ivory-50 p-5 shadow-md">
-              <p className="font-display text-lg tracking-[0.2em]">925</p>
-              <ul className="text-[13px] mt-2 space-y-1 text-ivory-50/85">
-                <li>· Genuine 925 sterling silver</li>
-                <li>· Skin-safe, nickel-conscious finish</li>
-                <li>· Designed for daily wear</li>
-                <li>· Gift-ready Aajiva packaging</li>
-              </ul>
-              <button
-                onClick={() => setFlipped(false)}
-                className="mt-3 text-[12px] font-bold tracking-[0.2em] uppercase text-silver-300 underline underline-offset-4"
-              >
-                Flip back ↻
-              </button>
+              {/* back: details */}
+              <div className="flip-face flip-back absolute inset-0 rounded-2xl bg-charcoal-900 text-ivory-50 p-4 min-[400px]:p-5 shadow-md">
+                <p className="font-display text-lg tracking-[0.2em]">925</p>
+                <ul className="text-[13px] mt-2 space-y-1 text-ivory-50/85">
+                  <li>· Genuine 925 sterling silver</li>
+                  <li>· Skin-safe, nickel-conscious finish</li>
+                  <li>· Designed for daily wear</li>
+                  <li>· Gift-ready Aajiva packaging</li>
+                </ul>
+                <button
+                  onClick={() => setFlipped(false)}
+                  className="mt-3 text-[12px] font-bold tracking-[0.2em] uppercase text-silver-300 underline underline-offset-4"
+                >
+                  Flip back ↻
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-auto pt-6 flex flex-col gap-3">
+        {/* sticky action bar */}
+        <div
+          className="shrink-0 p-5 pt-3 md:p-8 md:pt-2 bg-ivory-50 border-t border-silver-300/40 flex flex-col gap-3"
+          style={{ paddingBottom: 'max(1.25rem, env(safe-area-inset-bottom))' }}
+        >
           <button
             onClick={handleAdd}
-            className={`rounded-full py-4 text-sm font-bold tracking-[0.25em] uppercase transition-colors ${
+            className={`rounded-full min-h-[52px] py-4 text-sm font-bold tracking-[0.25em] uppercase transition-colors ${
               added ? 'bg-sage-600 text-ivory-50' : 'bg-charcoal-900 text-ivory-50 hover:bg-charcoal-800'
             }`}
           >

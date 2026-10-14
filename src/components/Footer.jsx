@@ -3,7 +3,7 @@ const COLLECTIONS = ['Everyday Essentials', 'Bloom', 'Heart Stories', 'Bandhan']
 
 export default function Footer() {
   return (
-    <footer className="absolute bottom-16 md:bottom-14 inset-x-0 z-10 pointer-events-none">
+    <footer className="absolute bottom-14 inset-x-0 z-10 pointer-events-none hidden md:block">
       <div className="mx-auto max-w-5xl px-4 text-center">
         <p className="text-[11px] text-charcoal-700/60 leading-relaxed">
           Aajiva · 925 sterling silver · skin-safe · made for every day

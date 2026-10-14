@@ -49,6 +49,8 @@
 
 html, body, #root {
   height: 100%;
+  /* dynamic viewport height: mobile browser toolbars no longer jump/crop the app */
+  height: 100dvh;
 }
 body {
   font-family: var(--font-body);
@@ -56,6 +58,31 @@ body {
   color: var(--color-charcoal-800);
   -webkit-font-smoothing: antialiased;
   overscroll-behavior: none;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* R3F canvases own their gestures (orbit drag/rotate); the rest of the app is tap-only */
+#root canvas {
+  touch-action: none;
+}
+
+/* fluid entrance title: fits 320px phones without shrinking desktop */
+.entrance-title {
+  font-size: clamp(2.5rem, 13.5vw, 4.5rem);
+  letter-spacing: clamp(0.08em, 2.2vw, 0.18em);
+  line-height: 1.05;
+}
+.entrance-tagline {
+  font-size: clamp(1rem, 4.6vw, 1.25rem);
+}
+/* short viewports (landscape phones): tighten entrance padding */
+@media (max-height: 520px) {
+  .entrance-tight {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
 }
 
 /* flip card for the pick-up price tag */

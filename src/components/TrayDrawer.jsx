@@ -16,7 +16,7 @@ export default function TrayDrawer({ open, onClose, tray, setQty, remove, total 
             <h2 className="font-display text-2xl text-charcoal-900">Your Tray</h2>
             <p className="text-[12px] text-charcoal-700/70">Pieces you're considering</p>
           </div>
-          <button onClick={onClose} aria-label="Close tray" className="w-9 h-9 rounded-full bg-ivory-200 hover:bg-ivory-300 text-charcoal-800 text-lg">
+          <button onClick={onClose} aria-label="Close tray" className="w-11 h-11 rounded-full bg-ivory-200 hover:bg-ivory-300 text-charcoal-800 text-xl flex items-center justify-center">
             ×
           </button>
         </div>
@@ -39,9 +39,9 @@ export default function TrayDrawer({ open, onClose, tray, setQty, remove, total 
                 <p className="text-[13px] font-semibold text-charcoal-900 leading-snug">{product.name}</p>
                 <div className="mt-2 flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <button onClick={() => setQty(product.id, qty - 1)} className="w-7 h-7 rounded-full bg-ivory-200 hover:bg-ivory-300 font-bold">−</button>
+                    <button onClick={() => setQty(product.id, qty - 1)} aria-label="Decrease quantity" className="w-10 h-10 rounded-full bg-ivory-200 hover:bg-ivory-300 font-bold text-lg">−</button>
                     <span className="text-sm font-bold w-5 text-center">{qty}</span>
-                    <button onClick={() => setQty(product.id, qty + 1)} className="w-7 h-7 rounded-full bg-ivory-200 hover:bg-ivory-300 font-bold">+</button>
+                    <button onClick={() => setQty(product.id, qty + 1)} aria-label="Increase quantity" className="w-10 h-10 rounded-full bg-ivory-200 hover:bg-ivory-300 font-bold text-lg">+</button>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="font-display text-lg">{formatINR(product.price * qty)}</span>
@@ -54,7 +54,10 @@ export default function TrayDrawer({ open, onClose, tray, setQty, remove, total 
         </div>
 
         {items.length > 0 && (
-          <div className="p-5 border-t border-silver-300/60 space-y-3">
+          <div
+            className="p-5 border-t border-silver-300/60 space-y-3"
+            style={{ paddingBottom: 'max(1.25rem, env(safe-area-inset-bottom))' }}
+          >
             <div className="flex items-baseline justify-between">
               <span className="text-sm font-semibold text-charcoal-700">Tray total</span>
               <span className="font-display text-2xl text-charcoal-900">{formatINR(total)}</span>

@@ -8,6 +8,7 @@ import PickupView from './components/PickupView';
 import TrayDrawer from './components/TrayDrawer';
 import Footer from './components/Footer';
 import { useTray } from './hooks/useTray';
+import { useViewport } from './hooks/useViewport';
 import { productById } from './data/products';
 
 export default function App() {
@@ -17,23 +18,17 @@ export default function App() {
   const [trayOpen, setTrayOpen] = useState(false);
   const { tray, add, remove, setQty, count } = useTray();
 
-  const [isDesktop, setIsDesktop] = useState(
-    () => typeof window !== 'undefined' && window.innerWidth >= 768
-  );
+  const vp = useViewport();
+  const isDesktop = vp.isDesktop;
   const [reducedMotion, setReducedMotion] = useState(
     () => typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
   );
 
   useEffect(() => {
-    const onResize = () => setIsDesktop(window.innerWidth >= 768);
     const mq = window.matchMedia?.('(prefers-reduced-motion: reduce)');
     const onMotion = (e) => setReducedMotion(e.matches);
-    window.addEventListener('resize', onResize);
     mq?.addEventListener?.('change', onMotion);
-    return () => {
-      window.removeEventListener('resize', onResize);
-      mq?.removeEventListener?.('change', onMotion);
-    };
+    return () => mq?.removeEventListener?.('change', onMotion);
   }, []);
 
   const handlePick = useCallback((product) => setPicked(product), []);
@@ -44,7 +39,7 @@ export default function App() {
   );
 
   return (
-    <div className="relative h-full w-full overflow-hidden bg-ivory-100 select-none">
+    <div className="relative h-[100dvh] w-full overflow-hidden bg-ivory-100 select-none">
       {/* main 3D boutique */}
       <Canvas
         className="!absolute !inset-0"
@@ -67,7 +62,7 @@ export default function App() {
 
       {entered && !picked && (
         <>
-          <ZoneCard zoneId={zoneId} />
+          <ZoneCard zoneId={zoneId} isPhone={vp.isPhone} />
           <ZoneNav
             zoneId={zoneId}
             onZone={setZoneId}

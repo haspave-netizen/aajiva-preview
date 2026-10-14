@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import { useFrame, useThree } from '@react-three/fiber';
 import { RoomEnvironment } from 'three-stdlib';
 import { ZONES, PRODUCTS } from '../data/products';
+import { zoneFraming } from './cameraFit';
 import { JewelryModel } from './models';
 import { silverMaterial, velvetMaterial, glassMaterial } from './materials';
 
@@ -23,37 +24,67 @@ function LocalEnv() {
   return null;
 }
 
-/* Smooth camera fly-between zone viewpoints. */
+/* Smooth camera fly-between zone viewpoints — aspect-aware so portrait
+ * phones keep the whole zone subject in frame. On desktop the computed
+ * distance never exceeds the authored one, so desktop framing is untouched. */
 function CameraRig({ zoneId, entered, reducedMotion }) {
-  const { camera } = useThree();
+  const { camera, size } = useThree();
   const cur = useRef({ pos: new THREE.Vector3(0, 1.7, 11.2), look: new THREE.Vector3(0, 1.9, 4.5) });
-  const view = useMemo(() => {
-    const z = ZONES.find((x) => x.id === (entered ? zoneId : 'entrance'));
-    return z ? z.view : ZONES[0].view;
-  }, [zoneId, entered]);
+  const target = useRef({ pos: new THREE.Vector3(0, 1.7, 11.2), look: new THREE.Vector3(0, 1.9, 4.5) });
+  const lastSize = useRef({ w: 0, h: 0 });
+  const zone = useMemo(
+    () => ZONES.find((x) => x.id === (entered ? zoneId : 'entrance')) || ZONES[0],
+    [zoneId, entered]
+  );
+  const view = zone.view;
 
   useEffect(() => {
-    if (reducedMotion) {
-      cur.current.pos.set(...view.pos);
-      cur.current.look.set(...view.look);
+    const w = size.width, h = size.height;
+    const aspect = w / Math.max(h, 1);
+    const shortLandscape = aspect >= 1 && h < 520;
+    const { fov, needDist } = zoneFraming(zone, aspect, shortLandscape);
+
+    const pos = new THREE.Vector3(...view.pos);
+    const look = new THREE.Vector3(...view.look);
+    const dir = pos.clone().sub(look);
+    const authoredDist = dir.length();
+    dir.normalize();
+    // only ever pull the camera BACK, never push it closer than authored
+    const dist = Math.max(authoredDist, needDist);
+    const adjPos = look.clone().add(dir.multiplyScalar(dist));
+
+    target.current.pos.copy(adjPos);
+    target.current.look.copy(look);
+
+    if (Math.abs(camera.fov - fov) > 0.01) {
+      camera.fov = fov;
+      camera.updateProjectionMatrix();
     }
-  }, [view, reducedMotion]);
+
+    const sizeChanged = lastSize.current.w !== w || lastSize.current.h !== h;
+    lastSize.current = { w, h };
+    if (reducedMotion || sizeChanged) {
+      // snap on rotation/resize so no stale frame lingers (main canvas may be
+      // frameloop='never' while the pick-up view is open)
+      cur.current.pos.copy(adjPos);
+      cur.current.look.copy(look);
+      camera.position.copy(adjPos);
+      camera.lookAt(look);
+    }
+  }, [view, zone, size.width, size.height, reducedMotion, camera]);
 
   useFrame((_, dt) => {
-    if (reducedMotion) {
-      camera.position.set(...view.pos);
-      camera.lookAt(...view.look);
-      return;
-    }
+    if (reducedMotion) return;
     const k = 2.4;
-    cur.current.pos.x = THREE.MathUtils.damp(cur.current.pos.x, view.pos[0], k, dt);
-    cur.current.pos.y = THREE.MathUtils.damp(cur.current.pos.y, view.pos[1], k, dt);
-    cur.current.pos.z = THREE.MathUtils.damp(cur.current.pos.z, view.pos[2], k, dt);
-    cur.current.look.x = THREE.MathUtils.damp(cur.current.look.x, view.look[0], k, dt);
-    cur.current.look.y = THREE.MathUtils.damp(cur.current.look.y, view.look[1], k, dt);
-    cur.current.look.z = THREE.MathUtils.damp(cur.current.look.z, view.look[2], k, dt);
-    camera.position.copy(cur.current.pos);
-    camera.lookAt(cur.current.look);
+    const c = cur.current, t = target.current;
+    c.pos.x = THREE.MathUtils.damp(c.pos.x, t.pos.x, k, dt);
+    c.pos.y = THREE.MathUtils.damp(c.pos.y, t.pos.y, k, dt);
+    c.pos.z = THREE.MathUtils.damp(c.pos.z, t.pos.z, k, dt);
+    c.look.x = THREE.MathUtils.damp(c.look.x, t.look.x, k, dt);
+    c.look.y = THREE.MathUtils.damp(c.look.y, t.look.y, k, dt);
+    c.look.z = THREE.MathUtils.damp(c.look.z, t.look.z, k, dt);
+    camera.position.copy(c.pos);
+    camera.lookAt(c.look);
   });
   return null;
 }
