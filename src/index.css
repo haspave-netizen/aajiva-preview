@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* ── Aajiva design tokens: quiet luxury — warm ivory, brushed silver, charcoal, sage velvet, blush ── */
+@theme {
+  --font-display: "Marcellus", "Cormorant Garamond", Georgia, serif;
+  --font-serif-alt: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+
+  --color-ivory-50: #faf7f0;
+  --color-ivory-100: #f6f1e7;
+  --color-ivory-200: #efe7d5;
+  --color-ivory-300: #e4d8bd;
+
+  --color-silver-300: #c9ced6;
+  --color-silver-400: #aab1bb;
+  --color-silver-500: #8a8f98;
+  --color-silver-600: #6b7078;
+
+  --color-charcoal-700: #3c3f45;
+  --color-charcoal-800: #2b2d33;
+  --color-charcoal-900: #1f2126;
+
+  --color-sage-200: #cfd6c6;
+  --color-sage-400: #9aa78d;
+  --color-sage-600: #6f7d63;
+  --color-sage-800: #4a5442;
+
+  --color-blush-200: #f3ddd6;
+  --color-blush-400: #e3b8ac;
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-fade-in: fade-in 0.9s ease both;
+  --animate-door-glow: door-glow 3.4s ease-in-out infinite;
+  --animate-spin-slow: spin 14s linear infinite;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes door-glow {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+
+html, body, #root {
+  height: 100%;
+}
+body {
+  font-family: var(--font-body);
+  background: var(--color-ivory-100);
+  color: var(--color-charcoal-800);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+/* flip card for the pick-up price tag */
+.flip-scene { perspective: 1200px; }
+.flip-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.flip-scene.flipped .flip-inner { transform: rotateY(180deg); }
+.flip-face { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.flip-back { transform: rotateY(180deg); }
+
+/* thin scrollbar for trays */
+.thin-scroll::-webkit-scrollbar { width: 5px; }
+.thin-scroll::-webkit-scrollbar-thumb { background: var(--color-silver-400); border-radius: 3px; }
