@@ -9,9 +9,10 @@ const ICONS = {
   gifting: '❀',
 };
 
-/* Zone chips scroll in their own flex-1 lane; the Tray button is a fixed
- * sibling outside the scroll area, so it can never be scrolled off-screen. */
-export default function ZoneNav({ zoneId, onZone, trayCount, onTrayOpen }) {
+/* Zone chips scroll in their own flex-1 lane; the "All pieces" and Tray
+ * buttons are fixed siblings outside the scroll area, so they can never
+ * be scrolled off-screen. */
+export default function ZoneNav({ zoneId, onZone, trayCount, onTrayOpen, onCatalogueOpen }) {
   return (
     <nav
       className="absolute bottom-0 inset-x-0 z-20"
@@ -37,6 +38,14 @@ export default function ZoneNav({ zoneId, onZone, trayCount, onTrayOpen }) {
               </button>
             ))}
           </div>
+          <button
+            onClick={onCatalogueOpen}
+            aria-label="Open the full catalogue"
+            className="shrink-0 flex items-center gap-1.5 rounded-xl px-3 min-h-[44px] text-[12px] font-bold text-charcoal-800 bg-ivory-200 hover:bg-ivory-300 transition-colors"
+          >
+            <span aria-hidden>▦</span>
+            <span className="hidden min-[400px]:inline">All pieces</span>
+          </button>
           <button
             onClick={onTrayOpen}
             className="shrink-0 relative flex items-center gap-1.5 rounded-xl px-4 min-h-[44px] text-[12px] font-bold bg-sage-600 text-ivory-50 hover:bg-sage-800 transition-colors"

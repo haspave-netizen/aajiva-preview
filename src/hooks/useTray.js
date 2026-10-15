@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 
-const KEY = 'aajiva-tray-v1';
+// Tray state. v2 key — the catalog ids replaced the old 16 procedural
+// product ids, so the old v1 tray (keyed by those ids) is retired.
+const KEY = 'aajiva-tray-v2';
 
 export function useTray() {
   const [tray, setTray] = useState(() => {

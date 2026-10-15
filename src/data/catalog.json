@@ -1,0 +1,3913 @@
+{
+ "meta": {
+  "generatedAt": "2026-10-15T01:27:26.778Z",
+  "source": "https://aajiva.com/products.json?limit=250",
+  "count": 239,
+  "perType": {
+   "Earrings": 35,
+   "Pendants": 20,
+   "Rings": 19,
+   "Silver Rakhi": 23,
+   "Bracelets": 70,
+   "Sets": 26,
+   "Anklets": 29,
+   "Toe Rings": 17
+  }
+ },
+ "products": [
+  {
+   "id": "15409141383319",
+   "title": "Cubic Zirconia (White & Green Combined)",
+   "handle": "cubic-zirconia-white-green-combined-303",
+   "type": "Earrings",
+   "price": 2250,
+   "compareAt": 2500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/WFemHxji9cVkD2KiKDjgFaAR5q1Ei2me359N0Q8Q.webp?v=1791224886"
+   ]
+  },
+  {
+   "id": "15409141285015",
+   "title": "Pave Flower & Marquise Drop Earrings",
+   "handle": "pave-flower-marquise-drop-earrings-302",
+   "type": "Earrings",
+   "price": 2125,
+   "compareAt": 2500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/2Byqi8zm5hhpNjlL8RIVKyXEkhyLJ2XbX16gaELh.webp?v=1791224885"
+   ]
+  },
+  {
+   "id": "15409141612695",
+   "title": "Emerald Flower & Petal Drop Earrings",
+   "handle": "emerald-flower-petal-drop-earrings-306",
+   "type": "Earrings",
+   "price": 1980,
+   "compareAt": 2200,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/dQrwOlyDYGZcIRq28XXGiqCGo8Tb1k1OWlKgUdtj.webp?v=1791224889"
+   ]
+  },
+  {
+   "id": "15409141514391",
+   "title": "Pink Enamel Dolphin Stud Earrings",
+   "handle": "pink-enamel-dolphin-stud-earrings-305",
+   "type": "Earrings",
+   "price": 1870,
+   "compareAt": 2200,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/OBHDTWB3oog4zS5eEArkwW1epYMdJlZ1m38JwMaY.webp?v=1791224888"
+   ]
+  },
+  {
+   "id": "15409141416087",
+   "title": "Sapphire Halo & Cluster Drop Earrings",
+   "handle": "sapphire-halo-cluster-drop-earrings-304",
+   "type": "Earrings",
+   "price": 2520,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/iSwH1jGL1RrgzvW9XdZVEls9zxob6JuRmEij7geL.webp?v=1791224887"
+   ]
+  },
+  {
+   "id": "15409141743767",
+   "title": "Pave Fairy Pendant Necklace",
+   "handle": "pave-fairy-pendant-necklace-308",
+   "type": "Pendants",
+   "price": 4050,
+   "compareAt": 4500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/pBaxquhi8YYcz3rQSts5saB8zG2uapQryLiSi2rQ.webp?v=1791224891"
+   ]
+  },
+  {
+   "id": "15409141678231",
+   "title": "Pave Circle & Pink Cluster Drop Earrings",
+   "handle": "pave-circle-pink-cluster-drop-earrings-307",
+   "type": "Earrings",
+   "price": 2380,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/0NyPk3T0UTkO8XlutO45NIafQSWcvU6HwPE2xkPW.webp?v=1791224890"
+   ]
+  },
+  {
+   "id": "15409142005911",
+   "title": "Clover Pearl Pendant",
+   "handle": "clover-pearl-pendant-311",
+   "type": "Pendants",
+   "price": 3936,
+   "compareAt": 4800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/cgO301BmPFetgpgQ0Yx1oJ77sbKmBCgzPflzCdIa.png?v=1791224895"
+   ]
+  },
+  {
+   "id": "15409141907607",
+   "title": "Bluecolor Cluster Teardrop Pendant",
+   "handle": "bluecolor-cluster-teardrop-pendant-310",
+   "type": "Pendants",
+   "price": 3825,
+   "compareAt": 4500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/rKg90MgZrxcMnh24kkuu9QqM0JYkg2sFEC389AdI.png?v=1791224895"
+   ]
+  },
+  {
+   "id": "15409141809303",
+   "title": "Black Enamel Flower & Pearl Pendant",
+   "handle": "black-enamel-flower-pearl-pendant-309",
+   "type": "Pendants",
+   "price": 3825,
+   "compareAt": 4500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/evXIKFCPImSKzu2OpyBYPDloUn4MBLL15fRsA70R.png?v=1791224893"
+   ]
+  },
+  {
+   "id": "15409142169751",
+   "title": "Trio Floret & Pearl Drop Necklace",
+   "handle": "trio-floret-pearl-drop-necklace-314",
+   "type": "Pendants",
+   "price": 3690,
+   "compareAt": 4500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/I7m4WjFmWlJJkw134hmygO4IdG7RcYtP9slJCrDF.png?v=1791224897"
+   ]
+  },
+  {
+   "id": "15409142104215",
+   "title": "Fluted Barrel Bead Pendant",
+   "handle": "fluted-barrel-bead-pendant-313",
+   "type": "Pendants",
+   "price": 3059.15,
+   "compareAt": 3599,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/I2ZpgrZn3lwmCdTcsEVyby7jwMoJR12fdesSSBXP.png?v=1791224897"
+   ]
+  },
+  {
+   "id": "15409142431895",
+   "title": "Emerald Baguette Station Necklace (Gold Edition)",
+   "handle": "emerald-baguette-station-necklace-gold-edition-318",
+   "type": "Pendants",
+   "price": 3690,
+   "compareAt": 4500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/iODp5Y4KpQKlBEPWx4njsIOdy6aGh7wx7zflJTou.png?v=1791224901"
+   ]
+  },
+  {
+   "id": "15409142366359",
+   "title": "Mother-of-Pearl Clover Halo Necklace",
+   "handle": "mother-of-pearl-clover-halo-necklace-316",
+   "type": "Pendants",
+   "price": 4050,
+   "compareAt": 4500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ciWXkmj39LdmzzJMxVvmeqE41WT6kb7Nq0hIFaBy.webp?v=1791224897"
+   ]
+  },
+  {
+   "id": "15409142235287",
+   "title": "Pearl Halo Pendant Necklace",
+   "handle": "pearl-halo-pendant-necklace-315",
+   "type": "Pendants",
+   "price": 2870,
+   "compareAt": 3500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/OimtlagFmHu72P5ASXUUYBA5RuKaMMHj8tDCzpF0.png?v=1791224898"
+   ]
+  },
+  {
+   "id": "15409142562967",
+   "title": "Pink Drop Necklace",
+   "handle": "pink-drop-necklace-320",
+   "type": "Pendants",
+   "price": 4080,
+   "compareAt": 4800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/cVFDkPz4d9o4FApU9BiGi7yWy2sXL2ubpucEgUhF.png?v=1791224902"
+   ]
+  },
+  {
+   "id": "15409142497431",
+   "title": "Ruby Drop Station Pendents",
+   "handle": "ruby-drop-station-pendents-319",
+   "type": "Pendants",
+   "price": 4080,
+   "compareAt": 4800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/EdZ4jFIeEgJGZA41da8Zzz8xH5dnjMs9PViQOPOL.png?v=1791224900"
+   ]
+  },
+  {
+   "id": "15409142792343",
+   "title": "Pavé Spiral Wrap Ring",
+   "handle": "pave-spiral-wrap-ring-324",
+   "type": "Rings",
+   "price": 840,
+   "compareAt": 1120,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ZT32f5WuEtcozD004MSJDhF2MfqV0JEglLO1oLWH.png?v=1791224904"
+   ]
+  },
+  {
+   "id": "15409142661271",
+   "title": "Arrow Wrap Open Ring",
+   "handle": "arrow-wrap-open-ring-323",
+   "type": "Rings",
+   "price": 1049.75,
+   "compareAt": 1615,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/YQz3OR5nhEwO0YnwS9E5wTfMzrMMH2KkDTnJjA8g.png?v=1791224902"
+   ]
+  },
+  {
+   "id": "15409142923415",
+   "title": "Vintage Rope Solitaire Ring",
+   "handle": "vintage-rope-solitaire-ring-326",
+   "type": "Rings",
+   "price": 1430,
+   "compareAt": 2860,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/F9MR1uj9mt0ssgrLAbZg8FwkUPlIWdfrMyZpDIFS.png?v=1791224906"
+   ]
+  },
+  {
+   "id": "15409142825111",
+   "title": "Twisted Crossover Solitaire Ring",
+   "handle": "twisted-crossover-solitaire-ring-325",
+   "type": "Rings",
+   "price": 800.1,
+   "compareAt": 2286,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/dKdfMDhbgCqVzXAgAHf75N5Aea7aW2m9nDdczz3i.png?v=1791224905"
+   ]
+  },
+  {
+   "id": "15409143054487",
+   "title": "Pavé Eternity Band with Heart Accent",
+   "handle": "pave-eternity-band-with-heart-accent-328",
+   "type": "Rings",
+   "price": 724.75,
+   "compareAt": 1115,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/gtxv5AG5tqMlngOailmDlvRWBJSCtK2ueHf1RneK.webp?v=1791224906"
+   ]
+  },
+  {
+   "id": "15409142988951",
+   "title": "Baguette & Round Duo Ring",
+   "handle": "baguette-round-duo-ring-327",
+   "type": "Rings",
+   "price": 750.2,
+   "compareAt": 1364,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/2wHIq8mZKb82edBNpP0IDevciiwnkCyvK3ibaIuV.png?v=1791224907"
+   ]
+  },
+  {
+   "id": "15409143316631",
+   "title": "Classic Halo Solitaire Ring",
+   "handle": "classic-halo-solitaire-ring-331",
+   "type": "Rings",
+   "price": 1060.15,
+   "compareAt": 1631,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/V0iaXVclvlysbZw6xh0c4FN6dFmeDgQWs9IdCnv6.webp?v=1791224909"
+   ]
+  },
+  {
+   "id": "15409143218327",
+   "title": "Onyx Heart Pavé Dome Ring",
+   "handle": "onyx-heart-pave-dome-ring-330",
+   "type": "Rings",
+   "price": 980.1,
+   "compareAt": 2178,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/QH6Xi0fOvZ0AgHb0K8W9jLL8hvd4g84pN9b9vDLu.webp?v=1791224908"
+   ]
+  },
+  {
+   "id": "15409143152791",
+   "title": "Pink Butterfly Wing Ring",
+   "handle": "pink-butterfly-wing-ring-329",
+   "type": "Rings",
+   "price": 1299.75,
+   "compareAt": 1733,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/i8oDpRtsirUguN2qfnZGNFpehtcLKHnsXtuy2qVB.webp?v=1791224907"
+   ]
+  },
+  {
+   "id": "15409143447703",
+   "title": "Twin Star Open Ring",
+   "handle": "twin-star-open-ring-333",
+   "type": "Rings",
+   "price": 709.8,
+   "compareAt": 1092,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/W0aeH4bvxRKvZvj69jV9W1i7a2Z8CExHeFdhAOth.webp?v=1791224911"
+   ]
+  },
+  {
+   "id": "15409143414935",
+   "title": "Cluster Circle Cutout Ring",
+   "handle": "cluster-circle-cutout-ring-332",
+   "type": "Rings",
+   "price": 3575,
+   "compareAt": 5500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/AgGsqH3ij7MYUJMRsRkxOAXOuUu0qNWXvT4ivEes.webp?v=1791224910"
+   ]
+  },
+  {
+   "id": "15409143677079",
+   "title": "Double Infinity Pavé Ring",
+   "handle": "double-infinity-pave-ring-336",
+   "type": "Rings",
+   "price": 1236,
+   "compareAt": 1648,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/KTcok7wdT7pH3CVySwRaAIJJEloKQpAJ4jCWd2WQ.webp?v=1791224914",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IMG_5270-71057319eb.jpg?v=1791399185"
+   ]
+  },
+  {
+   "id": "15409143644311",
+   "title": "Gold Flake Obsidian Inlay Band Ring",
+   "handle": "gold-flake-obsidian-inlay-band-ring-335",
+   "type": "Rings",
+   "price": 3012,
+   "compareAt": 5020,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/pX1TjzxuQWrKUqKLjWcS2fc9ixWVKZGM9cbyltQK.webp?v=1791224913"
+   ]
+  },
+  {
+   "id": "15409143546007",
+   "title": "Pavé Snake Wrap Ring",
+   "handle": "pave-snake-wrap-ring-334",
+   "type": "Rings",
+   "price": 888.3,
+   "compareAt": 1269,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/nRQ0DIl6Kj9R52cUiidbL9tLA9hK8yaC9gwRYB4y.png?v=1791224914"
+   ]
+  },
+  {
+   "id": "15409143939223",
+   "title": "Tapered Pavé Wrap Ring",
+   "handle": "tapered-pave-wrap-ring-339",
+   "type": "Rings",
+   "price": 1290.1,
+   "compareAt": 1843,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ScO8fnfzkkoW7ziirRPqm74urs7W8m3dnWDr0hQP.webp?v=1791224916"
+   ]
+  },
+  {
+   "id": "15409143840919",
+   "title": "Princess Cut Halo Ring",
+   "handle": "princess-cut-halo-ring-338",
+   "type": "Rings",
+   "price": 1200,
+   "compareAt": 1600,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/LnpbsR6ecs6i7dznL2oGOSdH6IbVJ5xVQN7GG1pc.webp?v=1791224915"
+   ]
+  },
+  {
+   "id": "15409143775383",
+   "title": "Round Prong Eternity Band Ring",
+   "handle": "round-prong-eternity-band-ring-337",
+   "type": "Rings",
+   "price": 1235.85,
+   "compareAt": 2247,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/8BzvYe2BQNnOe7JBu1gPNunKKH9jcMXveeMRidN1.webp?v=1791224914"
+   ]
+  },
+  {
+   "id": "15409144135831",
+   "title": "Baguette & Round Bezel Eternity Ring",
+   "handle": "baguette-round-bezel-eternity-ring-341",
+   "type": "Rings",
+   "price": 829.95,
+   "compareAt": 1509,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IGcyuLSQ1L6AOPHDHkDumbltvl7jCwyAD2ba4IiH.webp?v=1791224919"
+   ]
+  },
+  {
+   "id": "15409144037527",
+   "title": "Open Solitaire Pave Ring",
+   "handle": "open-solitaire-pave-ring-340",
+   "type": "Rings",
+   "price": 690.1,
+   "compareAt": 1030,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/70RLbMHveTbGqZZU4KmVOwIkFCnD9JYt8i45TAwQ.webp?v=1791224917"
+   ]
+  },
+  {
+   "id": "15409144365207",
+   "title": "Ball Chain Bow Tassel Necklace",
+   "handle": "ball-chain-bow-tassel-necklace-344",
+   "type": "Pendants",
+   "price": 2549.15,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/OOCPs8LXCNCN0g8ryGmEMk8pvtd8pAX9Jsy75GrY.webp?v=1791224921"
+   ]
+  },
+  {
+   "id": "15409144299671",
+   "title": "Baguette Crescent Bar Necklace",
+   "handle": "baguette-crescent-bar-necklace-343",
+   "type": "Pendants",
+   "price": 4249.15,
+   "compareAt": 4999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/fv7LDUT895bD3Yw6uZYgwCuCEcxLbiMziCTe1S3R.webp?v=1791224920"
+   ]
+  },
+  {
+   "id": "15409144234135",
+   "title": "Ruby Heart Pendant Necklace",
+   "handle": "ruby-heart-pendant-necklace-342",
+   "type": "Pendants",
+   "price": 3899.35,
+   "compareAt": 5999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/cyRg9GeiqCkZmDRbRjHSE1t06BF08JoQX9fm86gt.png?v=1791224921"
+   ]
+  },
+  {
+   "id": "15409144529047",
+   "title": "Pearl Wreath Pendant Necklace",
+   "handle": "pearl-wreath-pendant-necklace-346",
+   "type": "Pendants",
+   "price": 3909.15,
+   "compareAt": 4599,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/BmP7VZKqpNA0lxjpcd9SeW98LkMLGq8EGMuvLtR9.webp?v=1791224923"
+   ]
+  },
+  {
+   "id": "15409144430743",
+   "title": "Pop Bead Necklaces",
+   "handle": "pop-bead-necklaces-345",
+   "type": "Pendants",
+   "price": 2699.1,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IBtmp2eJvX2kHSz2NHJ1V4E9uUgb9qkThr0v0W4l.webp?v=1791224923",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/eRCv38UpjwaPBxxoLtOnYiyaEU0NznNdE3VY3Ap6.webp?v=1791224923",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/pAfCkYId3iVbw7dmWgOD2RsovWS9th8ZYoQyUdvB.png?v=1791224925",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/foYFwaSaPl1G7zjXwsE2mxE5QxDCBselxHkLCuQG.png?v=1791224925"
+   ]
+  },
+  {
+   "id": "15409144758423",
+   "title": "Single Pearl Floating Necklace",
+   "handle": "single-pearl-floating-necklace-349",
+   "type": "Pendants",
+   "price": 2699.1,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/xeYKi4T5QmAhkKK3P1M6WpacmTNE45SVESTveBr4.webp?v=1791224925"
+   ]
+  },
+  {
+   "id": "15409144660119",
+   "title": "Twin Birds on Branch Pendent",
+   "handle": "twin-birds-on-branch-pendent-348",
+   "type": "Pendants",
+   "price": 4499.25,
+   "compareAt": 5999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Jg7lUQSGG0ziJvM0m1RY4qUZIuB0MOlDrm6hnsuu.webp?v=1791224925"
+   ]
+  },
+  {
+   "id": "15409144627351",
+   "title": "Sapphire Accent Circle Pendant",
+   "handle": "sapphire-accent-circle-pendant-347",
+   "type": "Pendants",
+   "price": 3199.2,
+   "compareAt": 3999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/bsMS30H1R2ZMX5BlskSkDiV0wuHwNeMVQUxBTSvv.webp?v=1791224924"
+   ]
+  },
+  {
+   "id": "15409144823959",
+   "title": "Flower Halo Solitaire Pendant Necklace",
+   "handle": "flower-halo-solitaire-pendant-necklace-350",
+   "type": "Pendants",
+   "price": 4675,
+   "compareAt": 5500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/uMHCJCoVA7V1QjzEkjJnZNqXrQuhHkNpxkRQmy5h.webp?v=1791224927"
+   ]
+  },
+  {
+   "id": "15409121951895",
+   "title": "Om Shakti — 925 sterling silver Om rakhi",
+   "handle": "om-shakti-925-sterling-silver-om-rakhi-95",
+   "type": "Silver Rakhi",
+   "price": 1175,
+   "compareAt": 2350,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/uGtZkXeFbYi1xdiYBmFCmbTvfUmCjMvsaDqvssfl.webp?v=1791224595",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Vxy1vORprkhLSwozmq0Ps1Osru7MGmDh2dzbybUf.webp?v=1791224594",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/gplPVvTAFGHjgWxIJyUp97CLjKhfJ2IYRI3ul2E1.webp?v=1791224595",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/hm1tsKLlrcNrAeovXdrNfUFVQ8yNwzOYJIQgWMdd.webp?v=1791224594",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/yxX9Jk5Q8yPa2YQpQehDmJVQ9YNIt8IzOt9sVMad.webp?v=1791224594",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/SNwk3x2utawhKsuDVwbFiwdh9fyZrnx5FPNxpIMw.webp?v=1791224595",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/L3jYf4VR9bSGygSEuiBFsKEc9r88tsmM85LeP7do.png?v=1791224596"
+   ]
+  },
+  {
+   "id": "15409124409495",
+   "title": "Emerald Bond — Multicolor Braided 925 Silver Rakhi",
+   "handle": "emerald-bond-multicolor-braided-925-silver-rakhi-104",
+   "type": "Silver Rakhi",
+   "price": 1000,
+   "compareAt": 2000,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/0qXudjYLWUEOBqCBsrS6BGUMfgBi6TqZfE3nCYKU.png?v=1791224679"
+   ]
+  },
+  {
+   "id": "15409122148503",
+   "title": "Harit Om — Leaf Charm Rakhi",
+   "handle": "harit-om-leaf-charm-rakhi-98",
+   "type": "Silver Rakhi",
+   "price": 1100,
+   "compareAt": 2200,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/BL2Twr4BF8zMjgepx3iB9LnBoas1WVcSh9Aphg3D.webp?v=1791224597",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ETUT2XZQGk5CLWJXeXhfG005IHxFo8kCytuPoyF7.png?v=1791224599",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/bkGVHE8RCpMcj8qPI5iTvW3nEsHMJ0bZXXD7okv2.png?v=1791224599",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/fStOeIGxwHBccu3fFpSmXXgGgRtDDoo8DGJobHDz.png?v=1791224599",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/TFx5bf2vTKsopfrWkFvngudeGeCsXY8HxoZR92g0.png?v=1791224599",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/3wJSCUZjh3IrtdK2Pf0j1TAT4NRG3wsEQcasGRFU.png?v=1791224599",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/UlFibjrDUuUVF0FSsyJH67a0NlRNhjKS8UqmNJKf.png?v=1791224599",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IPG6s63ErKvnLi5vdMqODNYeeVj26Wi6vQDhTddI.png?v=1791224599"
+   ]
+  },
+  {
+   "id": "15409122050199",
+   "title": "Silver Ganesh — Textured Silver Rakhi",
+   "handle": "silver-ganesh-textured-silver-rakhi-96",
+   "type": "Silver Rakhi",
+   "price": 975,
+   "compareAt": 1950,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/pRsGzPIgFWgiDelI11sJNpvGXvUis0CiDoNQTEjh.webp?v=1791224596",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/nIczl79QKkNqFaFyeseWDMD5v12fSjYcReqJzMsY.png?v=1791224597",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/HNYsJJi2FvakX2sDtlKSt5QF0Cruxyn71EK52tJh.png?v=1791224598",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/mhq1yAlC7TiWl5DZ12N3w3E6DFSjxcdN2RoY2OUm.png?v=1791224598",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/wqouPV1ZQsEDGRCVz1ofsPMNUYEZQvpORCU90xck.png?v=1791224598"
+   ]
+  },
+  {
+   "id": "15409124737175",
+   "title": "AAJIVA Ganesh Medallion Silver Rakhi",
+   "handle": "aajiva-ganesh-medallion-silver-rakhi-111",
+   "type": "Silver Rakhi",
+   "price": 1150,
+   "compareAt": 2300,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/8E1d8NrJKG0wQDAucisMGPdGmTrdq9WCspwdN9xI.png?v=1791224683",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/tJaczeffyMHGp3k33yi2mKYVJI20akAxtTY3UoCb.png?v=1791224683",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/U4qJ0BTAELazgDcI7Vq9EIcUNAXd5bWSewssjfdE.png?v=1791224683",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/W2SvQMS09XVFuqpaSWmEDtPWRDIAKz0O1SYW89Ic.png?v=1791224683",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Tz7uJhjRrS9OLOhYmSelAPNQAf1qLEEm7FOLrFPR.png?v=1791224683"
+   ]
+  },
+  {
+   "id": "15409124671639",
+   "title": "AAJIVA Kanha Script Silver Rakhi",
+   "handle": "aajiva-kanha-script-silver-rakhi-109",
+   "type": "Silver Rakhi",
+   "price": 1225,
+   "compareAt": 2450,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/cWxliAkn3Nvf64VSc7m4B8K7LEPQC2n5J6kUjbz2.webp?v=1791224680",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/LpoO9pwbxRIHs98abSyteskFEC8PiSAN2P9pVk3l.webp?v=1791224680",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Qc7NT8iggzExkEUKUeARwxR30g77djFmQOEVYt4U.png?v=1791224682",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/KfTQ5N4Q17Vr8mb56vXUNiBSPo6sDHjApwYxwsqP.png?v=1791224682",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/gvDqyvLlfnOWiYbOyGueDMKtWr0RF0VWeI7OINxG.png?v=1791224682"
+   ]
+  },
+  {
+   "id": "15409124573335",
+   "title": "AAJIVA Trishul Meena Silver Rakhi",
+   "handle": "aajiva-trishul-meena-silver-rakhi-106",
+   "type": "Silver Rakhi",
+   "price": 1250,
+   "compareAt": 2500,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/pP3570MxpHnoUiI5WARBZvhu2rB7taRu3S41DHdy.png?v=1791224681",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/YBFuRsrwWc3aNQgcGH2Nkpx5eSZB6hTsce5I93b5.png?v=1791224680"
+   ]
+  },
+  {
+   "id": "15409124475031",
+   "title": "AAJIVA Vinayak Silver Rakhi",
+   "handle": "aajiva-vinayak-silver-rakhi-105",
+   "type": "Silver Rakhi",
+   "price": 1100,
+   "compareAt": 2200,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/gZArak9BB8UmQIVT9DvEWs9L9pGGYN22HMaFMFmY.webp?v=1791224677",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/69VQKFoxuFduOqs1riATNvWzuG3Xz9VZyOUqD8y5.png?v=1791224679",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/4ItX9QuIXwkK7WmhpPlsIN5Rjtw7kfiD2YoDg8By.png?v=1791224679",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Gt7Z1eUArmJbc4PUh9m7DxMlDmyJgOvWrhF9vknK.png?v=1791224679",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/9r0bevhouNCzJZjT7K4rDaB58P5q1XkmnQFXNGdN.png?v=1791224679",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/x2CchmHXbeYk1VogNXgt0XSMr2XUb2H6gUU6uc4A.png?v=1791224679"
+   ]
+  },
+  {
+   "id": "15409124966551",
+   "title": "AAJIVA Swastik Charm Silver Rakhi",
+   "handle": "aajiva-swastik-charm-silver-rakhi-114",
+   "type": "Silver Rakhi",
+   "price": 1199.6,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/7MGGfgGI2BWgcN8manzq6cTtO65fPCHZuzYeZJwF.webp?v=1791224685",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/zWtAGCDvVsSSamTuQS0ziOqogzz68BrfrwSJz0Db.png?v=1791224687",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/VwlnHquQS6gw3SQm63fEzJVy3UhHtNEkNQMpwqw4.png?v=1791224687",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/cha9fLd5ogzje6sXhJZaVEj0vbhf6aISbQD6lGWV.png?v=1791224687",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/CAIOL0VfkFW3mE2PpvPOQH0T3PESldVUalDOL2a2.png?v=1791224687",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/tZbklHhtjjGFHHiu6T5rsSu1oSe9ElsRTRum4CU9.png?v=1791224687",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/T8bog7bf6nPPffWT1LiFrDuDHTEuSDnZWOe8x8JE.png?v=1791224687"
+   ]
+  },
+  {
+   "id": "15409124901015",
+   "title": "Om Vartul — Circular Silver Om Rakhi",
+   "handle": "om-vartul-circular-silver-om-rakhi-113",
+   "type": "Silver Rakhi",
+   "price": 1150,
+   "compareAt": 2300,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/7lr8YKbt5Wx6dRAqv3AtjDNHIlnW1pUECdF7gbQw.webp?v=1791224683",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/OpoWJUTO2zB6BMzrI8FkTpj6xLh0oI8z9YuEaFD4.png?v=1791224685",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/qwfKHVQOAjW4Jwra811DIL59uIeSssIHI3ienPzl.png?v=1791224685",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/0YghEAuwsRCcZaVB3c2SESonHtlFXScGBeIO74gU.png?v=1791224685",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/d9rDLaYFaOQZPDiGwvl4aNZxecgAKYmAiSICVSnb.png?v=1791224685",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/LIb6XGpV9qdHSuMvJsgtiEGCLuX9Px7RN1X76ak8.png?v=1791224685"
+   ]
+  },
+  {
+   "id": "15409124802711",
+   "title": "AAJIVA Damru Charm Silver Rakhi",
+   "handle": "aajiva-damru-charm-silver-rakhi-112",
+   "type": "Silver Rakhi",
+   "price": 1100,
+   "compareAt": 2200,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/3GHKdUXTQFlNUkY4Sjg3PNxGapzkUekuDrUGLlwd.webp?v=1791224682",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/z6yrpzVy4iJvYNIuwLGiaQCo8tlbb7PVNXgmO5f7.png?v=1791224684",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/OsGOr3r2qGFciXSMgMjTIUrpTYfGe5Fav7547RWW.png?v=1791224684",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/JIeY3FXXXvZ1pzC1KMo6fehqowU3XbVqO3c21yAV.png?v=1791224684",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/5XAOxihpMVdPUXvALXLBD1izzK5bSp6vyTXboxXl.png?v=1791224685",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Z7PlhCzIGtEiagzk2O3g78jiIqMT0nbpPwtoRm4V.png?v=1791224684",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/0wdAKt5OO3nLDiTVBcm4ue1UYwBAcVR9fXtZNInn.png?v=1791224684"
+   ]
+  },
+  {
+   "id": "15409125163159",
+   "title": "Stellar Silver Ball-Chain Bracelet",
+   "handle": "stellar-silver-ball-chain-bracelet-117",
+   "type": "Bracelets",
+   "price": 4275,
+   "compareAt": 4500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/q7DZJWDKG9Rdrkiu2XUOxjlNsJTz0RhD0BsYg8DB.webp?v=1791224688"
+   ]
+  },
+  {
+   "id": "15409125097623",
+   "title": "AAJIVA Cute Bhai Silver Rakhi",
+   "handle": "aajiva-cute-bhai-silver-rakhi-116",
+   "type": "Silver Rakhi",
+   "price": 1200,
+   "compareAt": 2400,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ZD5BytMYXlIs12MSWPiEKqNMtFUl1UdzXCxnmtLF.webp?v=1791224687"
+   ]
+  },
+  {
+   "id": "15409125032087",
+   "title": "AAJIVA Rakshak Om Silver Rakhi",
+   "handle": "aajiva-rakshak-om-silver-rakhi-115",
+   "type": "Silver Rakhi",
+   "price": 940,
+   "compareAt": 2350,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ZvZtLPppACOMrD5mBybiSnAR1M6Ulx24KKurWYEC.webp?v=1791224686",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/pmi9x4bxgfxsutS40b9WULyaVlTjCR5JdjEsZhEU.png?v=1791224688",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/CAZ8VGLwQ3zVfRllnqRjDM4Wb5EKdPpdgxoRk0iL.png?v=1791224688",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/cZtIYtivJqNTugWCwhJmmkqWb4V28wJS0aHikbcG.png?v=1791224688",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ekhxUj2m81uWvpME5l51KG2L00TKrGOlqF14KEax.png?v=1791224688",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/H1PVwGxRFU1MOdd2sLCwLpeo9l68AyMpBZ1Nvsa4.png?v=1791224688",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/n0AOK0BoNs5AhPZlBdvExlLetZccFrShbyNUwNij.png?v=1791224688",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/qFa090S4nM3IW3pmxovh6E9uVIGV3gsASKaAvnH7.png?v=1791224688"
+   ]
+  },
+  {
+   "id": "15409125359767",
+   "title": "Amora Layered Heart Charm Silver Bracelet",
+   "handle": "amora-layered-heart-charm-silver-bracelet-120",
+   "type": "Bracelets",
+   "price": 3799.05,
+   "compareAt": 3999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/lIWPTZlixB1IXviX3dioG4UMvxr5vQEJkKB8Le4t.jpg?v=1791224692"
+   ]
+  },
+  {
+   "id": "15409125261463",
+   "title": "Nyra Oxidized Silver Snake Chain Bracelet",
+   "handle": "nyra-oxidized-silver-snake-chain-bracelet-119",
+   "type": "Bracelets",
+   "price": 3325,
+   "compareAt": 3500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Jk14VbDdZSEeQSZLP2VxQ6gs7MVeAtzHUnwBwFlO.webp?v=1791224690"
+   ]
+  },
+  {
+   "id": "15409125228695",
+   "title": "Luna Silver Flat Chain Bracelet",
+   "handle": "luna-silver-flat-chain-bracelet-118",
+   "type": "Bracelets",
+   "price": 2849.05,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/3DpsOBGdJlDkeh7YzIEh9F6Jmd2YEMSIp0QexwVk.webp?v=1791224689"
+   ]
+  },
+  {
+   "id": "15409125523607",
+   "title": "Serene Textured CZ Bracelet",
+   "handle": "serene-textured-cz-bracelet-123",
+   "type": "Bracelets",
+   "price": 3514.05,
+   "compareAt": 3699,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Kids",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/vM4t34FQ8oX5gFB3tcRld5FipI8UcIbwHDfdqxXj.webp?v=1791224694"
+   ]
+  },
+  {
+   "id": "15409125490839",
+   "title": "Rosalie Ruby Halo Open Cuff Bracelet",
+   "handle": "rosalie-ruby-halo-open-cuff-bracelet-122",
+   "type": "Bracelets",
+   "price": 4950,
+   "compareAt": 5500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/vSJ53sumhho42HRHu1Rbrr7NLzzh0aeTA4xXDLSW.webp?v=1791224693"
+   ]
+  },
+  {
+   "id": "15409125425303",
+   "title": "Stardust Silver Diamond-Cut Snake Chain Bracelet",
+   "handle": "stardust-silver-diamond-cut-snake-chain-bracelet-121",
+   "type": "Bracelets",
+   "price": 3040,
+   "compareAt": 3200,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/JppAR3dvhwenU7IBMxYXpMlrEQLiAWUxqLqCYUQr.webp?v=1791224692"
+   ]
+  },
+  {
+   "id": "15409125785751",
+   "title": "Elora Silver Box Chain Bracelet",
+   "handle": "elora-silver-box-chain-bracelet-126",
+   "type": "Bracelets",
+   "price": 3510,
+   "compareAt": 3900,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/E4jk9bumtSiVs2tYDBLU43HFP0VukPiiLV5uv6wk.webp?v=1791224697"
+   ]
+  },
+  {
+   "id": "15409125687447",
+   "title": "Vesper Bar & Bead Silver Chain Bracelet",
+   "handle": "vesper-bar-bead-silver-chain-bracelet-125",
+   "type": "Bracelets",
+   "price": 4132.5,
+   "compareAt": 4350,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/6I1NNSUZTCdZ8Tn1HFKEr73m7ud4qeTiA7dnvTh6.webp?v=1791224696"
+   ]
+  },
+  {
+   "id": "15409125589143",
+   "title": "Celeste Diamond-Cut Silver Chain Bracelet",
+   "handle": "celeste-diamond-cut-silver-chain-bracelet-124",
+   "type": "Bracelets",
+   "price": 4085,
+   "compareAt": 4300,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/URkmhkA7yLgymQEKe58ZCE4QPCl3ByXJVwAmPD6V.webp?v=1791224695"
+   ]
+  },
+  {
+   "id": "15409126015127",
+   "title": "Stardust Pavé Ball Station Bracelet",
+   "handle": "stardust-pave-ball-station-bracelet-129",
+   "type": "Bracelets",
+   "price": 2849.05,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Kids",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/eaYGF16UORPKWNS6SPP7684eyeseeTJpAEJbeYlo.webp?v=1791224701"
+   ]
+  },
+  {
+   "id": "15409125949591",
+   "title": "Unity Interlocking Circles Silver Bracelet",
+   "handle": "unity-interlocking-circles-silver-bracelet-128",
+   "type": "Bracelets",
+   "price": 4085,
+   "compareAt": 4300,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ArLcMXsNxugj6YTu1VDD5DXPgOkT2dcoOn2AdXsu.webp?v=1791224700"
+   ]
+  },
+  {
+   "id": "15409125851287",
+   "title": "Aveline Solitaire Halo Bar Bracelet",
+   "handle": "aveline-solitaire-halo-bar-bracelet-127",
+   "type": "Bracelets",
+   "price": 4950,
+   "compareAt": 5500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/0bevaVMFX60pWUXixhTIA7ScK6ii6rEAVOsWEPgY.webp?v=1791224699"
+   ]
+  },
+  {
+   "id": "15409126408343",
+   "title": "Infinita Silver Infinity Bracelet",
+   "handle": "infinita-silver-infinity-bracelet-134",
+   "type": "Bracelets",
+   "price": 4341.5,
+   "compareAt": 4570,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/82rz2Uyl81OiNa442uaK7uZEtPCHZ92EsE5jvlw9.webp?v=1791224706"
+   ]
+  },
+  {
+   "id": "15409126310039",
+   "title": "Blossom Floral Charm Bracelet",
+   "handle": "blossom-floral-charm-bracelet-133",
+   "type": "Bracelets",
+   "price": 4275,
+   "compareAt": 4500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/pCpYxQtSKxxSKWNJf5hw0Aj54OsPh7QvqJtPCY7J.webp?v=1791224704"
+   ]
+  },
+  {
+   "id": "15409126211735",
+   "title": "Perla Cube & Pearl Station Bracelet",
+   "handle": "perla-cube-pearl-station-bracelet-131",
+   "type": "Bracelets",
+   "price": 4749.05,
+   "compareAt": 4999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/TK0x86BEB8tf8xXFbGOSfVD01TFvXwoRPFUpFI3A.webp?v=1791224703"
+   ]
+  },
+  {
+   "id": "15409126146199",
+   "title": "Nazar Infinity Evil Eye Bracelet",
+   "handle": "nazar-infinity-evil-eye-bracelet-130",
+   "type": "Bracelets",
+   "price": 6649.05,
+   "compareAt": 6999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/rncnuP6abrLwKS2vXKb2Jvao3KWwGORIHKIcraqk.webp?v=1791224702"
+   ]
+  },
+  {
+   "id": "15409126670487",
+   "title": "Eternal Shine CZ Tennis Bracelet",
+   "handle": "eternal-shine-cz-tennis-bracelet-137",
+   "type": "Bracelets",
+   "price": 3419.05,
+   "compareAt": 3599,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ecZB0IFvsbSjdywvsJ9zpSs9sbwzMLe2FfJA4mzB.webp?v=1791224709"
+   ]
+  },
+  {
+   "id": "15409126572183",
+   "title": "Duo Halo Half-Chain Bracelet",
+   "handle": "duo-halo-half-chain-bracelet-136",
+   "type": "Bracelets",
+   "price": 5225,
+   "compareAt": 5500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/iA6y6DFEN9poECQCHOsLbuv8Cw7uKjiwwzySAwI8.webp?v=1791224707"
+   ]
+  },
+  {
+   "id": "15409126506647",
+   "title": "Trixie Triangle & CZ Charm Bracelet",
+   "handle": "trixie-triangle-cz-charm-bracelet-135",
+   "type": "Bracelets",
+   "price": 4085,
+   "compareAt": 4300,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/HiEzwXdoMt5ZIDOyfAFfhFoWNWLZUpSNJmlTpiFK.webp?v=1791224707"
+   ]
+  },
+  {
+   "id": "15409126899863",
+   "title": "Radiance Pavé Cluster Bracelet",
+   "handle": "radiance-pave-cluster-bracelet-140",
+   "type": "Bracelets",
+   "price": 6649.05,
+   "compareAt": 6999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/JlENpzENaafu5Lh2Sh7OMUhNmCzgQzzKQIkn6pum.webp?v=1791224712"
+   ]
+  },
+  {
+   "id": "15409126801559",
+   "title": "Clover Charm Bar Bracelet",
+   "handle": "clover-charm-bar-bracelet-139",
+   "type": "Bracelets",
+   "price": 4369.05,
+   "compareAt": 4599,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/CbymV5DN6mH1vT0blAXiWvYrBdH0ELhgDKIGijta.webp?v=1791224711"
+   ]
+  },
+  {
+   "id": "15409126736023",
+   "title": "Verde Emerald Baguette Station Bracelet",
+   "handle": "verde-emerald-baguette-station-bracelet-138",
+   "type": "Bracelets",
+   "price": 3799.05,
+   "compareAt": 3999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/dskeARvqElBDrXdMoGeM9QzT9lzXhcKmGzVtLlGz.webp?v=1791224710"
+   ]
+  },
+  {
+   "id": "15409127129239",
+   "title": "Duetto Two-Tone Layered Charm Bracelet",
+   "handle": "duetto-two-tone-layered-charm-bracelet-142",
+   "type": "Bracelets",
+   "price": 3419.05,
+   "compareAt": 3599,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/JzteoKOhZgoBMG3iqmWSJbhi2V72q8XD5qJHzIlu.webp?v=1791224715"
+   ]
+  },
+  {
+   "id": "15409127030935",
+   "title": "Gemma Multicolor Pear Slider Bracelet",
+   "handle": "gemma-multicolor-pear-slider-bracelet-141",
+   "type": "Bracelets",
+   "price": 4180,
+   "compareAt": 4400,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ydsi2A493fWMGSBuNUj36Yc9cM4Q7R2GaC3Qbu15.webp?v=1791224713"
+   ]
+  },
+  {
+   "id": "15409127456919",
+   "title": "Verdant Emerald Halo Open Cuff Bracelet",
+   "handle": "verdant-emerald-halo-open-cuff-bracelet-145",
+   "type": "Bracelets",
+   "price": 4275,
+   "compareAt": 4500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/3pHwEHuMgbFBLLy4mZOjiBBI7uuWqkLtJIfThaxd.webp?v=1791224718"
+   ]
+  },
+  {
+   "id": "15409127325847",
+   "title": "Trio Sparkle Station Bracelet",
+   "handle": "trio-sparkle-station-bracelet-144",
+   "type": "Bracelets",
+   "price": 4370,
+   "compareAt": 4600,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/LYJDDabo2nhg7biMxzNfpWPk9q72qkQntEakOwsU.webp?v=1791224717"
+   ]
+  },
+  {
+   "id": "15409127227543",
+   "title": "Sunburst Onyx & Bead Station Bracelet",
+   "handle": "sunburst-onyx-bead-station-bracelet-143",
+   "type": "Bracelets",
+   "price": 4180,
+   "compareAt": 4400,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/r2CYmZ0E8UTUzU5shkdKXNlsn3jqmFSKZ4UVeZyU.webp?v=1791224716"
+   ]
+  },
+  {
+   "id": "15409127850135",
+   "title": "Frost Snowflake Cube Open Cuff Bracelet",
+   "handle": "frost-snowflake-cube-open-cuff-bracelet-149",
+   "type": "Bracelets",
+   "price": 4369.05,
+   "compareAt": 4599,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/LrNNezRm1bEKjmjxq6WL3Bft59ngwwe3ymFiwG90.webp?v=1791224722"
+   ]
+  },
+  {
+   "id": "15409127751831",
+   "title": "Azura Sapphire Halo Open Cuff Bracelet",
+   "handle": "azura-sapphire-halo-open-cuff-bracelet-148",
+   "type": "Bracelets",
+   "price": 5225,
+   "compareAt": 5500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/rFJebGHbpHqcNL9Ts6yjobCYG0bEJLSeYNBT4Eyo.webp?v=1791224721"
+   ]
+  },
+  {
+   "id": "15409127620759",
+   "title": "Pear-Cut + Baguette Ruby with CZ Halo",
+   "handle": "pear-cut-baguette-ruby-with-cz-halo-147",
+   "type": "Bracelets",
+   "price": 5225,
+   "compareAt": 5500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Aqe87zfMxWnJaO3LZdRYQ5EFlGCMcdRTh5o3Gojj.webp?v=1791224720"
+   ]
+  },
+  {
+   "id": "15409127555223",
+   "title": "Scarlet Ruby Halo Open Cuff Bracelet",
+   "handle": "scarlet-ruby-halo-open-cuff-bracelet-146",
+   "type": "Bracelets",
+   "price": 5225,
+   "compareAt": 5500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/jQYg6FyLDfiUWL2PFhJOyzJyJ6XaIl3yvghtrcUn.webp?v=1791224719"
+   ]
+  },
+  {
+   "id": "15409128145047",
+   "title": "Ruby Halo Open Cuff Bracelet – Classic Edit",
+   "handle": "ruby-halo-open-cuff-bracelet-classic-edit-152",
+   "type": "Bracelets",
+   "price": 5225,
+   "compareAt": 5500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/s4QXCqnhwjaVompusL6s1TwiGKAjVecDNObMahz5.webp?v=1791224726"
+   ]
+  },
+  {
+   "id": "15409128046743",
+   "title": "Twista Braided Silver Chain Bracelet",
+   "handle": "twista-braided-silver-chain-bracelet-151",
+   "type": "Bracelets",
+   "price": 5699.05,
+   "compareAt": 5999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/URDEaIqAK3brGTF0SPMPV10aeoRYVjfkJP4tboDm.webp?v=1791224724"
+   ]
+  },
+  {
+   "id": "15409127915671",
+   "title": "Sleek Silver Snake Chain Bracelet",
+   "handle": "sleek-silver-snake-chain-bracelet-150",
+   "type": "Bracelets",
+   "price": 2849.05,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ZkNRURsU3R44Ic44r9yD8qdG45BQu5wAvKxJozql.webp?v=1791224723"
+   ]
+  },
+  {
+   "id": "15409128472727",
+   "title": "Antiqua Oxidized Studded Bracelet",
+   "handle": "antiqua-oxidized-studded-bracelet-155",
+   "type": "Bracelets",
+   "price": 5225,
+   "compareAt": 5500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/U8zKi0Ui0PjndUU12EWsh6r4DYezT5cFeY1tE7U4.webp?v=1791224729"
+   ]
+  },
+  {
+   "id": "15409128374423",
+   "title": "Petalia Floral Open Cuff Bracelet",
+   "handle": "petalia-floral-open-cuff-bracelet-154",
+   "type": "Bracelets",
+   "price": 3799.05,
+   "compareAt": 3999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/sFZvcD7MXxyMNSMF3T7Q1gDmIcE6lwbObFf8vEYX.webp?v=1791224728"
+   ]
+  },
+  {
+   "id": "15409128276119",
+   "title": "Bianca White Halo Open Cuff Bracelet",
+   "handle": "bianca-white-halo-open-cuff-bracelet-153",
+   "type": "Bracelets",
+   "price": 5320,
+   "compareAt": 5600,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/tAGPiSQUUAi2zIFzKOk0g6RWvNem3sHEeirKlteb.webp?v=1791224727"
+   ]
+  },
+  {
+   "id": "15409128767639",
+   "title": "Ultra Baby Rakhi Silver Bracelet – Owl Charm",
+   "handle": "ultra-baby-rakhi-silver-bracelet-owl-charm-158",
+   "type": "Silver Rakhi",
+   "price": 1299.35,
+   "compareAt": 1999,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Kids",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/fq4aFmoS2rfdfSdWGouwbylWUeqPtwvNZtDRiTdM.webp?v=1791224732"
+   ]
+  },
+  {
+   "id": "15409128702103",
+   "title": "Ultra Baby Rakhi Silver Bracelet – Jagannath Charm",
+   "handle": "ultra-baby-rakhi-silver-bracelet-jagannath-charm-157",
+   "type": "Silver Rakhi",
+   "price": 3219.3,
+   "compareAt": 4599,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Kids",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/wJPfY1vCXfa7lmRVBL3v9Q5bEuqARacn7Z5JDXsb.webp?v=1791224731"
+   ]
+  },
+  {
+   "id": "15409128571031",
+   "title": "Ultra Baby Rakhi Silver Bracelet",
+   "handle": "ultra-baby-rakhi-silver-bracelet-156",
+   "type": "Silver Rakhi",
+   "price": 4139.1,
+   "compareAt": 4599,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Kids",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Fv3uD0fGpgr2l5J4O6hncRAgnxx1fSAczBAcSdn3.webp?v=1791224730"
+   ]
+  },
+  {
+   "id": "15409129128087",
+   "title": "Ultra Baby Rakhi Silver Bracelet – Orange Jagannath Charm",
+   "handle": "ultra-baby-rakhi-silver-bracelet-orange-jagannath-charm-162",
+   "type": "Silver Rakhi",
+   "price": 1689.35,
+   "compareAt": 2599,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Kids",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/cgjJQCgLxPvSfVzGq3srP9LU5W83f8R40GdzKmdA.webp?v=1791224737"
+   ]
+  },
+  {
+   "id": "15409129062551",
+   "title": "Ultra Baby Rakhi Silver Bracelet – Red Bird Charm",
+   "handle": "ultra-baby-rakhi-silver-bracelet-red-bird-charm-161",
+   "type": "Silver Rakhi",
+   "price": 1949.35,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Kids",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/KTVW6Y9TPv627Yxx0N5aFjelbpE608Om6HHCwWA4.webp?v=1791224736"
+   ]
+  },
+  {
+   "id": "15409128964247",
+   "title": "Ultra Baby Rakhi Silver Bracelet – Watermelon Charm",
+   "handle": "ultra-baby-rakhi-silver-bracelet-watermelon-charm-160",
+   "type": "Silver Rakhi",
+   "price": 2079.2,
+   "compareAt": 2599,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Kids",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/qNwZuQoeesIsNZAwjZB2xiXWdyPqzKAtIlGRfrdy.webp?v=1791224735"
+   ]
+  },
+  {
+   "id": "15409128865943",
+   "title": "Ultra Baby Rakhi Silver Bracelet – Cow Charm",
+   "handle": "ultra-baby-rakhi-silver-bracelet-cow-charm-159",
+   "type": "Silver Rakhi",
+   "price": 1399.3,
+   "compareAt": 1999,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Kids",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/WIt86tGsYbD2CRRmqEyfzbTwj2WRB1QrM4Dtdnee.webp?v=1791224733"
+   ]
+  },
+  {
+   "id": "15409129357463",
+   "title": "Ultra Baby Rakhi Silver Bracelet – Pink-Purple Smiley Charm",
+   "handle": "ultra-baby-rakhi-silver-bracelet-pink-purple-smiley-charm-165",
+   "type": "Silver Rakhi",
+   "price": 2999,
+   "compareAt": null,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/R1R6LFkbKRtHgKSJEUDsGNqt1BbTPnaxGljWXR0F.webp?v=1791224740"
+   ]
+  },
+  {
+   "id": "15409129324695",
+   "title": "Ultra Baby Rakhi Silver Bracelet – Elephant Coin Charm",
+   "handle": "ultra-baby-rakhi-silver-bracelet-elephant-coin-charm-164",
+   "type": "Silver Rakhi",
+   "price": 1949.35,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/EKjSrUaMHTtXgVUMgIihR2GPgck3VOdzrgaOg7LE.webp?v=1791224739"
+   ]
+  },
+  {
+   "id": "15409129226391",
+   "title": "Ultra Baby Rakhi Silver Bracelet – Purple Smiley Charm",
+   "handle": "ultra-baby-rakhi-silver-bracelet-purple-smiley-charm-163",
+   "type": "Silver Rakhi",
+   "price": 1890,
+   "compareAt": 2700,
+   "available": true,
+   "collections": [
+    "bandhan-collection"
+   ],
+   "gender": "Kids",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/MMqu5kFozKU8f96kacQu4jYdDwpnXniWqpkMtmKy.webp?v=1791224738"
+   ]
+  },
+  {
+   "id": "15409129652375",
+   "title": "Azura Sapphire Butterfly Necklace & Earring Set",
+   "handle": "azura-sapphire-butterfly-necklace-earring-set-168",
+   "type": "Sets",
+   "price": 3149.1,
+   "compareAt": 3499,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/JE2Z3Z2L7cUcBkiik4hOHJI0HeR0obGLAzCtXLV7.webp?v=1791485758"
+   ]
+  },
+  {
+   "id": "15409129554071",
+   "title": "Rosalind Pink Solitaire Halo Necklace & Earring Set",
+   "handle": "rosalind-pink-solitaire-halo-necklace-earring-set-167",
+   "type": "Sets",
+   "price": 3599.1,
+   "compareAt": 3999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/CoKPTaJWRdFGSeG4m1EcrIyxu7RxyBkwdbQBdKYh.webp?v=1791224742"
+   ]
+  },
+  {
+   "id": "15409129455767",
+   "title": "Ombre Heart Gradient Necklace & Earring Set",
+   "handle": "ombre-heart-gradient-necklace-earring-set-166",
+   "type": "Sets",
+   "price": 3850,
+   "compareAt": 5500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/usRUNOx5FQLhZvLYm6GatTbbs2ozojI37Qth3bgJ.png?v=1791224743"
+   ]
+  },
+  {
+   "id": "15409129881751",
+   "title": "Papillon Sapphire Butterfly Necklace & Earring Set",
+   "handle": "papillon-sapphire-butterfly-necklace-earring-set-171",
+   "type": "Sets",
+   "price": 3870,
+   "compareAt": 4300,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Kids",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/VVMXfuw6Yu7TjvGoK24e0zXaGY0SC7TIAzKGZzB0.webp?v=1791224746"
+   ]
+  },
+  {
+   "id": "15409129816215",
+   "title": "Blossom Bridal Floral Necklace & Earring Set",
+   "handle": "blossom-bridal-floral-necklace-earring-set-170",
+   "type": "Sets",
+   "price": 3329.1,
+   "compareAt": 3699,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/NAda9hmMlJfVPytp0yJH3EfeaerFM24wr0cOh5YL.webp?v=1791224745"
+   ]
+  },
+  {
+   "id": "15409129717911",
+   "title": "Meadow Emerald & Citrine Halo Necklace & Earring Set",
+   "handle": "meadow-emerald-citrine-halo-necklace-earring-set-169",
+   "type": "Sets",
+   "price": 2699.1,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/MztcxX3f1hIsogecim4EUvyOOJd1WGXWwQl42YFR.webp?v=1791224744"
+   ]
+  },
+  {
+   "id": "15409130143895",
+   "title": "Nazar Trail Anklet",
+   "handle": "nazar-trail-anklet-177",
+   "type": "Anklets",
+   "price": 3325,
+   "compareAt": 3500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/lGT7XxWDpwhJkyJzGOk9aFXh2qi8W0Rrxvd6JhU6.png?v=1791224752"
+   ]
+  },
+  {
+   "id": "15409130078359",
+   "title": "Nazar Drop Anklet",
+   "handle": "nazar-drop-anklet-176",
+   "type": "Anklets",
+   "price": 2499,
+   "compareAt": null,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/H80R13nDXLYiJLn0M6w4kIy4xSioz623Y0YvGCbG.webp?v=1791224749"
+   ]
+  },
+  {
+   "id": "15409129980055",
+   "title": "Nazar Bloom Anklet",
+   "handle": "nazar-bloom-anklet-175",
+   "type": "Anklets",
+   "price": 2500,
+   "compareAt": null,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/u5cvVmJAlWU98bEhYtbnuCHdKySXPDgeXVdfbppp.webp?v=1791224748"
+   ]
+  },
+  {
+   "id": "15409130373271",
+   "title": "Pink Sparkle Anklet",
+   "handle": "pink-sparkle-anklet-180",
+   "type": "Anklets",
+   "price": 2999,
+   "compareAt": null,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/8JXqdd8VQwyOXqCAckhKkFUyFbq5w63HWzxmlYjH.webp?v=1791224753"
+   ]
+  },
+  {
+   "id": "15409130307735",
+   "title": "Ruby Shine Anklet",
+   "handle": "ruby-shine-anklet-179",
+   "type": "Anklets",
+   "price": 3515,
+   "compareAt": 3700,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/MBQNkqrQdO8PcKFe7Ac3JtJM3pyDwoQ5vFN7TTfs.webp?v=1791224752"
+   ]
+  },
+  {
+   "id": "15409130242199",
+   "title": "Gemstone Trail Anklet",
+   "handle": "gemstone-trail-anklet-178",
+   "type": "Anklets",
+   "price": 3419.05,
+   "compareAt": 3599,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/SCnsJUg6wyVTg7OqIUmaNx2cwQkxgr1UojLlmDGL.webp?v=1791224751"
+   ]
+  },
+  {
+   "id": "15409130733719",
+   "title": "Blue Wing Anklet",
+   "handle": "blue-wing-anklet-184",
+   "type": "Anklets",
+   "price": 2374.05,
+   "compareAt": 2499,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/yIA1OGAeLvbxdYQcxqZdytd0pbUqTSd2f3ZJwgzF.webp?v=1791224757"
+   ]
+  },
+  {
+   "id": "15409130635415",
+   "title": "Rainbow Drop Anklet",
+   "handle": "rainbow-drop-anklet-183",
+   "type": "Anklets",
+   "price": 3515,
+   "compareAt": 3700,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/jicS0cVH83BLUW7zRngY5fKz75rugehdY3kL4seO.webp?v=1791224756"
+   ]
+  },
+  {
+   "id": "15409130569879",
+   "title": "Crystal Trail Anklet",
+   "handle": "crystal-trail-anklet-182",
+   "type": "Anklets",
+   "price": 2565,
+   "compareAt": 2700,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/z5pZHwqal3mlPclXG4aAILhaGbLTjTICK8qHlWlA.webp?v=1791224755"
+   ]
+  },
+  {
+   "id": "15409130471575",
+   "title": "Sapphire Shine Anklet",
+   "handle": "sapphire-shine-anklet-181",
+   "type": "Anklets",
+   "price": 2565,
+   "compareAt": 2700,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IqrI8sYlUS2NhHRsjQVmxYuob6y0AEfsc7ekJSfh.webp?v=1791224754"
+   ]
+  },
+  {
+   "id": "15409130832023",
+   "title": "Emerald Clover Anklet",
+   "handle": "emerald-clover-anklet-185",
+   "type": "Anklets",
+   "price": 3324.05,
+   "compareAt": 3499,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/u8Oia3hxzE3qJyekXHPSbG1AR5gOiQSvObsvqHOI.webp?v=1791224758"
+   ]
+  },
+  {
+   "id": "15409131094167",
+   "title": "Olive Charm Anklet",
+   "handle": "olive-charm-anklet-188",
+   "type": "Anklets",
+   "price": 2849.05,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/JUP8icreDNkag6marVFcSbwxhUI5XGoG2PLTl9lX.webp?v=1791224762"
+   ]
+  },
+  {
+   "id": "15409131028631",
+   "title": "Rainbow Heart Anklet",
+   "handle": "rainbow-heart-anklet-187",
+   "type": "Anklets",
+   "price": 3799.05,
+   "compareAt": 3999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/XnwMLnrmOg7GvoGeERc0KMb7tcs4a8L857bYSnlE.webp?v=1791224760"
+   ]
+  },
+  {
+   "id": "15409130930327",
+   "title": "Navy Frost Anklet",
+   "handle": "navy-frost-anklet-186",
+   "type": "Anklets",
+   "price": 2660,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/QvlhM4pKJpLXhV8pZbLM8DAroYDvKyGHJvKv3CI4.webp?v=1791224759"
+   ]
+  },
+  {
+   "id": "15409131356311",
+   "title": "Crystal Leaf Anklet",
+   "handle": "crystal-leaf-anklet-191",
+   "type": "Anklets",
+   "price": 2660,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/QObh8SdSMmJTzdmZ5YItCpVNrlh31rQXLMeBZcWu.webp?v=1791224765"
+   ]
+  },
+  {
+   "id": "15409131258007",
+   "title": "Sapphire Dangle Anklet",
+   "handle": "sapphire-dangle-anklet-190",
+   "type": "Anklets",
+   "price": 2660,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/JnNM0Jdr3jrq3w70O3u5EpqvFv8yHiVEbH9C7MIt.webp?v=1791224764"
+   ]
+  },
+  {
+   "id": "15409131192471",
+   "title": "Blossom Trail Anklet",
+   "handle": "blossom-trail-anklet-189",
+   "type": "Anklets",
+   "price": 2565,
+   "compareAt": 2700,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/WzhBNfpFSHgrIPgdTODpabFMkPgrJ3jtE9vL7ZT7.webp?v=1791224764"
+   ]
+  },
+  {
+   "id": "15409131716759",
+   "title": "Ruby Clover Anklet",
+   "handle": "ruby-clover-anklet-195",
+   "type": "Anklets",
+   "price": 3799.05,
+   "compareAt": 3999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Hv7FcJAllu32OkPZ0axjTuzfBkqaaQd8CLmgOKPv.webp?v=1791224769"
+   ]
+  },
+  {
+   "id": "15409131585687",
+   "title": "Nazar Star Anklet",
+   "handle": "nazar-star-anklet-194",
+   "type": "Anklets",
+   "price": 3599.1,
+   "compareAt": 3999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/eF6HtLGQLSHFh57t5TIgMHnKPyfpmI6Y7JENkJVE.webp?v=1791224768"
+   ]
+  },
+  {
+   "id": "15409131520151",
+   "title": "Sapphire Halo Anklet",
+   "handle": "sapphire-halo-anklet-193",
+   "type": "Anklets",
+   "price": 2849.05,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/kHpjBZFD5w3n4jbDcg1zTTFmyxIvvn2bL0i3wnFO.webp?v=1791224767"
+   ]
+  },
+  {
+   "id": "15409131421847",
+   "title": "Ruby Leaf Anklet",
+   "handle": "ruby-leaf-anklet-192",
+   "type": "Anklets",
+   "price": 2849.05,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/e3OtwDwEG6KttQLRIg6CYHb8soHQxWGFSMczVMSO.webp?v=1791224766"
+   ]
+  },
+  {
+   "id": "15409131946135",
+   "title": "Pearl Clover Anklet",
+   "handle": "pearl-clover-anklet-198",
+   "type": "Anklets",
+   "price": 2660,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/wTigqZdOQoSOhH5htbS3hQJtbJl7QdfqiUZvHsJG.png?v=1791224775"
+   ]
+  },
+  {
+   "id": "15409131913367",
+   "title": "Crystal Drop Anklet",
+   "handle": "crystal-drop-anklet-197",
+   "type": "Anklets",
+   "price": 2660,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/MXtp0wGbWa7GeI1Acg9nRXWhMYIsqgV7ZgqQVrTU.webp?v=1791224771"
+   ]
+  },
+  {
+   "id": "15409131815063",
+   "title": "Sapphire Clover Anklet",
+   "handle": "sapphire-clover-anklet-196",
+   "type": "Anklets",
+   "price": 3149.1,
+   "compareAt": 3499,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/nTNcdQFGZ9NbkXCDVJoDa6saWl2pgFV1Mpi3QYXK.webp?v=1791224770"
+   ]
+  },
+  {
+   "id": "15409132208279",
+   "title": "Blue Clover Anklet",
+   "handle": "blue-clover-anklet-201",
+   "type": "Anklets",
+   "price": 2699.1,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/bjMET1xP6dloR0bnJd8SM8j1PUFk9bslO9DpuglF.webp?v=1791224776"
+   ]
+  },
+  {
+   "id": "15409132142743",
+   "title": "Berry Baguette Anklet",
+   "handle": "berry-baguette-anklet-200",
+   "type": "Anklets",
+   "price": 2520,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/54jLX47fhBgSTOuvDYW7TKn6pFxneenoQ5XA7sH6.webp?v=1791224775"
+   ]
+  },
+  {
+   "id": "15409132044439",
+   "title": "Crystal Cascade Anklet",
+   "handle": "crystal-cascade-anklet-199",
+   "type": "Anklets",
+   "price": 2699.1,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/vdEv9J2QYhiHXIXJ7yN7DR2D5G2Qg7MibvKBNOVV.webp?v=1791224774"
+   ]
+  },
+  {
+   "id": "15409132503191",
+   "title": "Aurelia Teardrop Solitaire Necklace & Earring Set",
+   "handle": "aurelia-teardrop-solitaire-necklace-earring-set-204",
+   "type": "Sets",
+   "price": 2849.05,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/RHAWviZb8UwGsvERTMZVAmPPgR2TN3YWcFZW1cA7.webp?v=1791224779"
+   ]
+  },
+  {
+   "id": "15409132404887",
+   "title": "Emerald Drop Anklet",
+   "handle": "emerald-drop-anklet-203",
+   "type": "Anklets",
+   "price": 2519.1,
+   "compareAt": 2799,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/zYtJwMJL11ceaWzxuQiutHFto6YkSv9bzugCAm4d.webp?v=1791224778"
+   ]
+  },
+  {
+   "id": "15409132306583",
+   "title": "Baguette Sparkle Anklet",
+   "handle": "baguette-sparkle-anklet-202",
+   "type": "Anklets",
+   "price": 2520,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/vsVPrD10MMdmTE9G8ITf1gz2iQAa5UQ06Mbn4JMV.webp?v=1791224777"
+   ]
+  },
+  {
+   "id": "15409132896407",
+   "title": "Elora Vintage Halo Teardrop Necklace & Earring Set",
+   "handle": "elora-vintage-halo-teardrop-necklace-earring-set-208",
+   "type": "Sets",
+   "price": 2375,
+   "compareAt": 2500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/SOeYwFmwTWbHaXsbaMiHnIU82K5utHsgT5HrLVR2.webp?v=1791224784"
+   ]
+  },
+  {
+   "id": "15409132765335",
+   "title": "Iris Sapphire & Amethyst Teardrop Necklace & Earring Set",
+   "handle": "iris-sapphire-amethyst-teardrop-necklace-earring-set-207",
+   "type": "Sets",
+   "price": 2565,
+   "compareAt": 2700,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ESBp2uKaCKK2EbdhkI1JQ4hIx3VJdqYoGIrI575p.webp?v=1791224783"
+   ]
+  },
+  {
+   "id": "15409132667031",
+   "title": "Bella Bicolor Butterfly Necklace & Earring Set",
+   "handle": "bella-bicolor-butterfly-necklace-earring-set-206",
+   "type": "Sets",
+   "price": 2374.05,
+   "compareAt": 2499,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ohh9XTKSOH4nSEILSHn22MsIRklW0r0aiMbtJo07.webp?v=1791224782",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IMG_4876-be1307ea92.jpg?v=1791399192"
+   ]
+  },
+  {
+   "id": "15409132601495",
+   "title": "Skye Sapphire Butterfly Station Necklace & Stud Earring Set",
+   "handle": "skye-sapphire-butterfly-station-necklace-stud-earring-set-205",
+   "type": "Sets",
+   "price": 3150,
+   "compareAt": 3500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/FnBrj858ZVP5e7mJBae0RaDRzJofG3VQsfy4LOxO.webp?v=1791224781"
+   ]
+  },
+  {
+   "id": "15409133191319",
+   "title": "Mira Amethyst & Pink Sapphire Butterfly Necklace & Earring Set",
+   "handle": "mira-amethyst-pink-sapphire-butterfly-necklace-earring-set-211",
+   "type": "Sets",
+   "price": 2660,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/mFynXoMqzuY32HK6C0FhNr1o6tSjAVeyQcWcZVYz.webp?v=1791224788"
+   ]
+  },
+  {
+   "id": "15409133060247",
+   "title": "Violette Amethyst Floral Cascade Necklace & Earring Set",
+   "handle": "violette-amethyst-floral-cascade-necklace-earring-set-210",
+   "type": "Sets",
+   "price": 2699.1,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/kOnbMG5LX09lqUhYEh2PIcphRpJg8dL1A8mhPTuE.webp?v=1791224786",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IMG_4777-c12119f39f.jpg?v=1791399192"
+   ]
+  },
+  {
+   "id": "15409132961943",
+   "title": "Marina Blue Topaz Halo Necklace & Earring Set",
+   "handle": "marina-blue-topaz-halo-necklace-earring-set-209",
+   "type": "Sets",
+   "price": 2850,
+   "compareAt": 3000,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IXoPC2c5HrpIdwgQnslkZp51roF1IaThwmZi3e53.webp?v=1791224785"
+   ]
+  },
+  {
+   "id": "15409133453463",
+   "title": "Magenta Ruby Twin Butterfly Necklace & Earring Set",
+   "handle": "magenta-ruby-twin-butterfly-necklace-earring-set-214",
+   "type": "Sets",
+   "price": 2660,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/huTZIGqB3nGXyYtlHy6r5fsrB1oh9UpmNzF3sJt8.webp?v=1791224791"
+   ]
+  },
+  {
+   "id": "15409133322391",
+   "title": "Wisteria Amethyst Vine Necklace & Earring Set",
+   "handle": "wisteria-amethyst-vine-necklace-earring-set-213",
+   "type": "Sets",
+   "price": 2849.05,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/lRtFIc4YklT2f0JQgaZe6S7r5THdPkhiFh9tjb2w.webp?v=1791224790"
+   ]
+  },
+  {
+   "id": "15409133224087",
+   "title": "Verona Pink & Emerald Halo Teardrop Necklace & Earring Set",
+   "handle": "verona-pink-emerald-halo-teardrop-necklace-earring-set-212",
+   "type": "Sets",
+   "price": 3799.05,
+   "compareAt": 3999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Oeb34HyJSbOj1aZjEuD6WL4P4RMhRZmaZHbOxfFy.webp?v=1791224788",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IMG_4884-d44f6bbe9c.jpg?v=1791399192",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IMG_4885-59b8e9766a.jpg?v=1791399191",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IMG_4918-37b21b8b46.jpg?v=1791399191"
+   ]
+  },
+  {
+   "id": "15409133879447",
+   "title": "Snowdrop Crystal Floral Vine Necklace & Earring Set",
+   "handle": "snowdrop-crystal-floral-vine-necklace-earring-set-218",
+   "type": "Sets",
+   "price": 2699.1,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/H3M0fJ1XZtD2k4ZZqW08AbTV82iwkzqdAgOEpAhF.webp?v=1791224795"
+   ]
+  },
+  {
+   "id": "15409133748375",
+   "title": "Sunflora Citrine Floral Halo Necklace & Earring Set",
+   "handle": "sunflora-citrine-floral-halo-necklace-earring-set-217",
+   "type": "Sets",
+   "price": 2519.1,
+   "compareAt": 2799,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/xD76KoGJNWyzE4l7MzAZltsQrW6oVsM6oZ6OL62z.webp?v=1791224794"
+   ]
+  },
+  {
+   "id": "15409133682839",
+   "title": "Celeste Round Halo Solitaire Necklace & Earring Set",
+   "handle": "celeste-round-halo-solitaire-necklace-earring-set-216",
+   "type": "Sets",
+   "price": 2699.1,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/93BoWxfVwZKtJE7jZjwm6koP9E28dhwdvvI9Whi3.webp?v=1791224793",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IMG_4770-2395943e8c.jpg?v=1791399192",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IMG_4772-b7a93830e0.jpg?v=1791399192",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IMG_4773-329ce4944c.jpg?v=1791399192"
+   ]
+  },
+  {
+   "id": "15409133551767",
+   "title": "Camellia Ruby Vine Necklace & Earring Set",
+   "handle": "camellia-ruby-vine-necklace-earring-set-215",
+   "type": "Sets",
+   "price": 2430,
+   "compareAt": 2700,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/AiEmcp2KB8H99tTcwKVmpp3UrObkcNzEpYwyguII.webp?v=1791224792"
+   ]
+  },
+  {
+   "id": "15409134141591",
+   "title": "Fern Emerald & Peridot Butterfly Necklace & Earring Set",
+   "handle": "fern-emerald-peridot-butterfly-necklace-earring-set-221",
+   "type": "Sets",
+   "price": 2849.05,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Dc66S1rWzT6Kc5GQWWLpqqmokTYc5w8weAhUB2C1.webp?v=1791224798"
+   ]
+  },
+  {
+   "id": "15409134076055",
+   "title": "Ruby Blossom Floral Necklace & Earring Set",
+   "handle": "ruby-blossom-floral-necklace-earring-set-220",
+   "type": "Sets",
+   "price": 3599.1,
+   "compareAt": 3999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/NY2F9ykcPtp142FusPzsSmj4NCzrMri7eaoqHoT6.webp?v=1791224797"
+   ]
+  },
+  {
+   "id": "15409133977751",
+   "title": "Crystal White Twin Butterfly Necklace & Earring Set",
+   "handle": "crystal-white-twin-butterfly-necklace-earring-set-219",
+   "type": "Sets",
+   "price": 2699.1,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/qiAfp3QnKn7CaptgH95Oh7XpY8D46GlXIiTR9swL.webp?v=1791224796"
+   ]
+  },
+  {
+   "id": "15409134469271",
+   "title": "Amara Rhodolite Purple Open Cuff Toe Ring (Pair)",
+   "handle": "amara-rhodolite-purple-open-cuff-toe-ring-pair-224",
+   "type": "Toe Rings",
+   "price": 882,
+   "compareAt": 1176,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/CwfCWRiOfvfCmt38Vh2lJJ3MbgClkWqoVkdC1rpB.webp?v=1791224801"
+   ]
+  },
+  {
+   "id": "15409134338199",
+   "title": "Emerald Isle Round Halo Necklace & Earring Set",
+   "handle": "emerald-isle-round-halo-necklace-earring-set-223",
+   "type": "Sets",
+   "price": 2659.05,
+   "compareAt": 2799,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/j3DS2uSt5J95I7kISQIvAIOBGeW5VVZ5VPGzbE7W.webp?v=1791485594",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IMG_4797-55090e24ff.jpg?v=1791399191"
+   ]
+  },
+  {
+   "id": "15409134239895",
+   "title": "Verde Emerald Star Blossom Necklace & Earring Set",
+   "handle": "verde-emerald-star-blossom-necklace-earring-set-222",
+   "type": "Sets",
+   "price": 2849.05,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/WFzhMX15UEAzsERpYbHSGrEIaw1dXVv7pJslJoEP.webp?v=1791224799"
+   ]
+  },
+  {
+   "id": "15409134764183",
+   "title": "Vine Swirl Pink Pear Open Cuff Toe Ring (Pair)",
+   "handle": "vine-swirl-pink-pear-open-cuff-toe-ring-pair-228",
+   "type": "Toe Rings",
+   "price": 1820,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/JR1dz3CdKhY8Ocu2PG4R1FIBiHz1kgGVaMglatbK.webp?v=1791224805"
+   ]
+  },
+  {
+   "id": "15409134665879",
+   "title": "Lumi Twin Bezel Open Cuff Toe Ring (Pair)",
+   "handle": "lumi-twin-bezel-open-cuff-toe-ring-pair-227",
+   "type": "Toe Rings",
+   "price": 990.08,
+   "compareAt": 1456,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/JV4AhIwCDEZcYGZ3B8hiyIiwifpougEUHxF88vQY.webp?v=1791224804"
+   ]
+  },
+  {
+   "id": "15409134600343",
+   "title": "Bowtie Duo Pear Open Cuff Toe Ring (Pair)",
+   "handle": "bowtie-duo-pear-open-cuff-toe-ring-pair-226",
+   "type": "Toe Rings",
+   "price": 1500,
+   "compareAt": 2500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/DJEVk5ytSbsHAn5rwzU7QyWNAS0dwu51qHA7CT8Q.webp?v=1791224803"
+   ]
+  },
+  {
+   "id": "15409134534807",
+   "title": "Cora Pink Heart Open Cuff Toe Ring (Pair)",
+   "handle": "cora-pink-heart-open-cuff-toe-ring-pair-225",
+   "type": "Toe Rings",
+   "price": 1319.9,
+   "compareAt": 1970,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/JYg2Si2iwypUAPgVYct7Pul8yLOg17ZxJzJzHH6f.jpg?v=1791224803"
+   ]
+  },
+  {
+   "id": "15409134993559",
+   "title": "Vine Swirl Sapphire Blue Pear Open Cuff Toe Ring (Pair)",
+   "handle": "vine-swirl-sapphire-blue-pear-open-cuff-toe-ring-pair-231",
+   "type": "Toe Rings",
+   "price": 1800,
+   "compareAt": 2250,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/eT4CI9YodluFYjKisYQOFmS15Wr8XlQfJO1120V9.webp?v=1791224808"
+   ]
+  },
+  {
+   "id": "15409134928023",
+   "title": "Mira Mother-of-Pearl Heart Open Cuff Toe Ring (Pair)",
+   "handle": "mira-mother-of-pearl-heart-open-cuff-toe-ring-pair-230",
+   "type": "Toe Rings",
+   "price": 1129.8,
+   "compareAt": 1614,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Mkw6Pdc4ICw8WMmYoJivAVXFyt6xKOABsW0rHJbm.webp?v=1791224807"
+   ]
+  },
+  {
+   "id": "15409134829719",
+   "title": "Duo Gem Ruby & Emerald Toe Ring (Pair)",
+   "handle": "duo-gem-ruby-emerald-toe-ring-pair-229",
+   "type": "Toe Rings",
+   "price": 1980,
+   "compareAt": 4400,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/2IIS6bBDwZepdFUNuBasbvizUMrLNNZH7kGe19GG.webp?v=1791224806"
+   ]
+  },
+  {
+   "id": "15409135354007",
+   "title": "Trefle Clover Pavé Open Cuff Toe Ring (Pair)",
+   "handle": "trefle-clover-pave-open-cuff-toe-ring-pair-235",
+   "type": "Toe Rings",
+   "price": 1220.16,
+   "compareAt": 1488,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/UzwGJ9z0vYfNU8TkBFgiRn47MUIsTmV5nel7dRax.webp?v=1791224813"
+   ]
+  },
+  {
+   "id": "15409135288471",
+   "title": "Papillon Pavé Butterfly & Sapphire Open Cuff Toe Ring (Pair)",
+   "handle": "papillon-pave-butterfly-sapphire-open-cuff-toe-ring-pair-234",
+   "type": "Toe Rings",
+   "price": 1355.75,
+   "compareAt": 1595,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/v1NiTzUPDGSnUij9BDbadgszszppL6JuVfnkEgwb.webp?v=1791224812"
+   ]
+  },
+  {
+   "id": "15409135157399",
+   "title": "Halo Circle & Solitaire Open Cuff Toe Ring (Pair)",
+   "handle": "halo-circle-solitaire-open-cuff-toe-ring-pair-233",
+   "type": "Toe Rings",
+   "price": 1482,
+   "compareAt": 1976,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/B2WJGAUjUKh6YtUF7Oa0MSZbHMnYgYEC1cTlTSYl.webp?v=1791224811"
+   ]
+  },
+  {
+   "id": "15409135059095",
+   "title": "Papillon Enamel Butterfly Open Cuff Toe Ring (Pair)",
+   "handle": "papillon-enamel-butterfly-open-cuff-toe-ring-pair-232",
+   "type": "Toe Rings",
+   "price": 2821,
+   "compareAt": null,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/gllIjbLpMSwhxpy6nHH2rYn4XfuK1J6B53XvGuM3.webp?v=1791224809"
+   ]
+  },
+  {
+   "id": "15409135648919",
+   "title": "Duo Pear Ruby & Emerald Toe Ring (Pair)",
+   "handle": "duo-pear-ruby-emerald-toe-ring-pair-238",
+   "type": "Toe Rings",
+   "price": 1329.9,
+   "compareAt": 2046,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/sm4QW0JHR0ZWSEPt7tnJHXWQvS4VNQtmXET8S8vC.webp?v=1791224816"
+   ]
+  },
+  {
+   "id": "15409135485079",
+   "title": "Rosette Bow & Ruby Pear Open Cuff Toe Ring (Pair)",
+   "handle": "rosette-bow-ruby-pear-open-cuff-toe-ring-pair-237",
+   "type": "Toe Rings",
+   "price": 2029.8,
+   "compareAt": 3383,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/PvRPHqg6KnbJT86lFHtKvyh2IvDqCEGlpbk7W66T.webp?v=1791224815"
+   ]
+  },
+  {
+   "id": "15409135419543",
+   "title": "Zigzag Pavé Diamond-Shape Open Cuff Toe Ring (Pair)",
+   "handle": "zigzag-pave-diamond-shape-open-cuff-toe-ring-pair-236",
+   "type": "Toe Rings",
+   "price": 1020.24,
+   "compareAt": 1308,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/JO9U7s0x2Iokk1vww6jv5HxtdezMyeeECvDqSddW.webp?v=1791224814",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IMG_2658-b03257542d.jpg?v=1791399193"
+   ]
+  },
+  {
+   "id": "15409135878295",
+   "title": "Titan Chunky Chain Link Men's Bracelet",
+   "handle": "titan-chunky-chain-link-mens-bracelet-241",
+   "type": "Bracelets",
+   "price": 11322.15,
+   "compareAt": 32349,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/PKIBbKFddaAGqeKvYlKjgyR9Ej0gra94VSgALj10.png?v=1791224821"
+   ]
+  },
+  {
+   "id": "15409135779991",
+   "title": "Papillon Pink & White Pavé Butterfly Toe Ring (Pair)",
+   "handle": "papillon-pink-white-pave-butterfly-toe-ring-pair-240",
+   "type": "Toe Rings",
+   "price": 1549.1,
+   "compareAt": 2213,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/P4psfIMpPktyv0rDCHGheu6q4ww7Som3q6MKKq7E.webp?v=1791224818"
+   ]
+  },
+  {
+   "id": "15409135714455",
+   "title": "Spiral Channel Sapphire Wrap Toe Ring (Pair)",
+   "handle": "spiral-channel-sapphire-wrap-toe-ring-pair-239",
+   "type": "Toe Rings",
+   "price": 1990.1,
+   "compareAt": 2843,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/AhS6rmzGORPobZAe3cFVH5MoCRHJoEkP4OWJqXdr.webp?v=1791224818"
+   ]
+  },
+  {
+   "id": "15409136238743",
+   "title": "Clover Bar-Link Men's Bracelet",
+   "handle": "clover-bar-link-mens-bracelet-245",
+   "type": "Bracelets",
+   "price": 12024.1,
+   "compareAt": 21862,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/mJ9sOfxpKe2wABuFw9mgVhhV4paEbOYMJMittrxF.png?v=1791224826"
+   ]
+  },
+  {
+   "id": "15409136140439",
+   "title": "XO Kiss Link Men's Bracelet",
+   "handle": "xo-kiss-link-mens-bracelet-244",
+   "type": "Bracelets",
+   "price": 11310,
+   "compareAt": 17400,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/XyKJqMbKZwKx8A833v0n0KuxIkiY5BMsPem3RQvw.png?v=1791224824"
+   ]
+  },
+  {
+   "id": "15409136042135",
+   "title": "Infinity Clover Link Men's Bracelet",
+   "handle": "infinity-clover-link-mens-bracelet-243",
+   "type": "Bracelets",
+   "price": 12749.15,
+   "compareAt": 14999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/7HjPuXQ7BMYBxf0ufydK5ZgQU0TZGKTI4dFh82fz.png?v=1791224823"
+   ]
+  },
+  {
+   "id": "15409135943831",
+   "title": "Onyx Cord Bar-Link Men's Bracelet",
+   "handle": "onyx-cord-bar-link-mens-bracelet-242",
+   "type": "Bracelets",
+   "price": 9655.2,
+   "compareAt": 10728,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/s5JXkDklDr4ghciTWzmQbbekH5YMIfsbjl46DVuV.png?v=1791224822"
+   ]
+  },
+  {
+   "id": "15409136500887",
+   "title": "Cross & Oval Link Men's Bracelet",
+   "handle": "cross-oval-link-mens-bracelet-248",
+   "type": "Bracelets",
+   "price": 12090,
+   "compareAt": 18600,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/XcQs3A2XQP51GstXtbRfQDsN1BN71TPH4Ws2xxJQ.webp?v=1791224827"
+   ]
+  },
+  {
+   "id": "15409136402583",
+   "title": "Curb Chain Emblem Clasp Men's Bracelet",
+   "handle": "curb-chain-emblem-clasp-mens-bracelet-247",
+   "type": "Bracelets",
+   "price": 21250.2,
+   "compareAt": 35417,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/vnxYgOVUs2Ncz7H5QZNZbs3ZoVCF8xXy5IuF7yzl.webp?v=1791224826"
+   ]
+  },
+  {
+   "id": "15409136337047",
+   "title": "Ribbed Barrel Bead Men's Bracelet",
+   "handle": "ribbed-barrel-bead-mens-bracelet-246",
+   "type": "Bracelets",
+   "price": 5400,
+   "compareAt": 13500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/TvuOjXP4ofym1yu2bvuubUJO8WMamZmu8q0t8qbc.webp?v=1791224825"
+   ]
+  },
+  {
+   "id": "15409136730263",
+   "title": "Pavé Cross Curb Chain Men's Bracelet",
+   "handle": "pave-cross-curb-chain-mens-bracelet-251",
+   "type": "Bracelets",
+   "price": 20200.05,
+   "compareAt": 31077,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/CKLTZZJPH4xkToXENdV0p0sE11iWtX15595VThQO.webp?v=1791224829"
+   ]
+  },
+  {
+   "id": "15409136664727",
+   "title": "Pyramid Stud Bar-Link Men's Bracelet",
+   "handle": "pyramid-stud-bar-link-mens-bracelet-250",
+   "type": "Bracelets",
+   "price": 10859.85,
+   "compareAt": 24133,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/fUvMuvVeu3qBGgXn3m8iDvF6CPThJ7Gqkuu5P0Vo.webp?v=1791224829"
+   ]
+  },
+  {
+   "id": "15409136566423",
+   "title": "Jubilee Flat Link Men's Bracelet",
+   "handle": "jubilee-flat-link-mens-bracelet-249",
+   "type": "Bracelets",
+   "price": 7680,
+   "compareAt": 12800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/fCHiYsz2r7m2VvKdKOSq6Xnr2s9kT7w45jr1ORWK.webp?v=1791224828"
+   ]
+  },
+  {
+   "id": "15409137123479",
+   "title": "Interlocking Heart-Link Men's Bracelet",
+   "handle": "interlocking-heart-link-mens-bracelet-255",
+   "type": "Bracelets",
+   "price": 11639.91,
+   "compareAt": 17373,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Qz0pvlkhEVSRLJPdAIRdAHCjfERhY1l2TyAo19uk.webp?v=1791224834"
+   ]
+  },
+  {
+   "id": "15409136992407",
+   "title": "Textured Bar & Bead Men's Bracelet",
+   "handle": "textured-bar-bead-mens-bracelet-254",
+   "type": "Bracelets",
+   "price": 11250.26,
+   "compareAt": 19397,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/oMfDeIvHfisheCs96464cqaP6Ls0gFFbhextH3YH.webp?v=1791224833"
+   ]
+  },
+  {
+   "id": "15409136926871",
+   "title": "Iced-Out Basketweave Men's Bracelet",
+   "handle": "iced-out-basketweave-mens-bracelet-253",
+   "type": "Bracelets",
+   "price": 18470.1,
+   "compareAt": 33582,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/JoJDaXynpuLBXTphO1slMAxzRPdspsXWyBkI1blf.webp?v=1791224832"
+   ]
+  },
+  {
+   "id": "15409136828567",
+   "title": "Honeycomb Pavé Flex Men's Bracelet",
+   "handle": "honeycomb-pave-flex-mens-bracelet-252",
+   "type": "Bracelets",
+   "price": 10680,
+   "compareAt": 13350,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/KYMx8IMqouHKDpFwNtLgoq5RhFjuEbR6tsiZUsaE.webp?v=1791224831"
+   ]
+  },
+  {
+   "id": "15409137385623",
+   "title": "Double Panther Head Curb Chain Bracelet",
+   "handle": "double-panther-head-curb-chain-bracelet-258",
+   "type": "Bracelets",
+   "price": 21899.8,
+   "compareAt": 33692,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ybaMr40Y4wcyQjpXgOHB9ZPJ4uVg4JzKgBXEZG2m.webp?v=1791224837"
+   ]
+  },
+  {
+   "id": "15409137287319",
+   "title": "Woven Chain Bar Men's Bracelet",
+   "handle": "woven-chain-bar-mens-bracelet-257",
+   "type": "Bracelets",
+   "price": 17399.9,
+   "compareAt": 24857,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/7byO6C5qBNvnPEmz41LVHZQSpv7j6YqahlGW0KUq.webp?v=1791224836"
+   ]
+  },
+  {
+   "id": "15409137189015",
+   "title": "Panther Head Curb Chain Men's Bracelet",
+   "handle": "panther-head-curb-chain-mens-bracelet-256",
+   "type": "Bracelets",
+   "price": 35200,
+   "compareAt": 64000,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/01SvLeeePbuwZoL5BpsYqL3pjRTryvOSGhD2gK9x.webp?v=1791224835"
+   ]
+  },
+  {
+   "id": "15409137647767",
+   "title": "Classic Curb Chain Men's Bracelet",
+   "handle": "classic-curb-chain-mens-bracelet-261",
+   "type": "Bracelets",
+   "price": 4939.8,
+   "compareAt": 8233,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/cWgVBGYPv2A5b1PH6O4MqmKZq8BWmVHzzeEJSCYf.webp?v=1791224840"
+   ]
+  },
+  {
+   "id": "15409137549463",
+   "title": "Classic Jubilee-Style Link Bracelet",
+   "handle": "classic-jubilee-style-link-bracelet-260",
+   "type": "Bracelets",
+   "price": 14849.84,
+   "compareAt": 21838,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/bVGmBzP8cXDFcQYVQSuJP6JwCNFSBWTKtjbS5HQh.webp?v=1791224840"
+   ]
+  },
+  {
+   "id": "15409137483927",
+   "title": "Two-Tone Pave Segmented Bracelet",
+   "handle": "two-tone-pave-segmented-bracelet-259",
+   "type": "Bracelets",
+   "price": 14669.9,
+   "compareAt": 20957,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/tryAEco9ZXkvFTlaGu2Ob1UBMvIK0WnOy7UWpF1h.webp?v=1791224838"
+   ]
+  },
+  {
+   "id": "15409137975447",
+   "title": "Coiled Chain Sculpted Head Bracelet",
+   "handle": "coiled-chain-sculpted-head-bracelet-265",
+   "type": "Bracelets",
+   "price": 23000.25,
+   "compareAt": 35385,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Sv4CikZsfMFxqpE39EUftfBG96vkxHsV64jogde2.webp?v=1791224845"
+   ]
+  },
+  {
+   "id": "15409137909911",
+   "title": "Textured Plate Curb Chain Bracelet",
+   "handle": "textured-plate-curb-chain-bracelet-264",
+   "type": "Bracelets",
+   "price": 30300.05,
+   "compareAt": 55091,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/6qDKk1xY733pGSfhwHkrikQq3D7bAwN8OTm7n2YM.webp?v=1791224844"
+   ]
+  },
+  {
+   "id": "15409137811607",
+   "title": "Star Cut-Out ID Plate Chain Bracelet",
+   "handle": "star-cut-out-id-plate-chain-bracelet-263",
+   "type": "Bracelets",
+   "price": 21500.25,
+   "compareAt": 28667,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/fZRsCqiZWMfc2UeoKcDfNYZRQ9qHAPjOiM6Mzht3.png?v=1791224845"
+   ]
+  },
+  {
+   "id": "15409137713303",
+   "title": "Black & Gold Pave Link Bracelet",
+   "handle": "black-gold-pave-link-bracelet-262",
+   "type": "Bracelets",
+   "price": 10000.2,
+   "compareAt": 14286,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Z6iKezAJcdH4bI8EJ48MU7eG0D5l0Z5uuU5OKI2s.webp?v=1791224842"
+   ]
+  },
+  {
+   "id": "15409138237591",
+   "title": "Woven Rope Chain Bracelet",
+   "handle": "woven-rope-chain-bracelet-268",
+   "type": "Bracelets",
+   "price": 14820,
+   "compareAt": 37050,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Ba3mWVOd7dF6SJuZRgrssyelqOsnyCMwU4ORflNx.webp?v=1791224848"
+   ]
+  },
+  {
+   "id": "15409138139287",
+   "title": "Geometric Engraved Link Bracelet",
+   "handle": "geometric-engraved-link-bracelet-267",
+   "type": "Bracelets",
+   "price": 5855.8,
+   "compareAt": 8740,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/uQUHefBvVb4sEg5h3vXoi7T3sZN1xLRcONVeeAWK.webp?v=1791224847"
+   ]
+  },
+  {
+   "id": "15409138040983",
+   "title": "Dense Pave Cluster Bracelet",
+   "handle": "dense-pave-cluster-bracelet-266",
+   "type": "Bracelets",
+   "price": 10680,
+   "compareAt": 13350,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/jY3Nz6LCvFyXH70SoKtrU9XTd38jTRviImFbKviO.webp?v=1791224846"
+   ]
+  },
+  {
+   "id": "15409138499735",
+   "title": "Two-Tone Twisted Bar & Bead Bracelet",
+   "handle": "two-tone-twisted-bar-bead-bracelet-271",
+   "type": "Bracelets",
+   "price": 6137.95,
+   "compareAt": 9443,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/0ki8DlckdMbPF9YLJ03K6mpz5GLtf1THIUqjXoMr.webp?v=1791224851"
+   ]
+  },
+  {
+   "id": "15409138401431",
+   "title": "Emerald Accent Bar-Link Bracelet",
+   "handle": "emerald-accent-bar-link-bracelet-270",
+   "type": "Bracelets",
+   "price": 8600,
+   "compareAt": 17200,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/XvoCyc0yze5TLoA1EaqKeeKGyuDF5GJ65XtePfjg.webp?v=1791224850"
+   ]
+  },
+  {
+   "id": "15409138303127",
+   "title": "Carved Bead-Link Bracelet",
+   "handle": "carved-bead-link-bracelet-269",
+   "type": "Bracelets",
+   "price": 5900.25,
+   "compareAt": 7867,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Otl9xUL2hfzDj1UQ2vFcIDwvVXaZ90OztDLXZzAz.webp?v=1791224849"
+   ]
+  },
+  {
+   "id": "15409138827415",
+   "title": "Halo Stud & Pearl Drop Earrings",
+   "handle": "halo-stud-pearl-drop-earrings-275",
+   "type": "Earrings",
+   "price": 3040,
+   "compareAt": 3200,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/dYNQiqE7WKUsZTCVUjKhDi5fzFyaR7ijy5EW3q0g.webp?v=1791224854"
+   ]
+  },
+  {
+   "id": "15409138729111",
+   "title": "Carved Flower Stud Earrings",
+   "handle": "carved-flower-stud-earrings-274",
+   "type": "Earrings",
+   "price": 2975,
+   "compareAt": 3500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/kfOiprgM3ydmaECGVNHi1uHMyACuTSRM94n6VWqX.webp?v=1791224853"
+   ]
+  },
+  {
+   "id": "15409138630807",
+   "title": "Floating Stone Pave Oval Drop Earrings",
+   "handle": "floating-stone-pave-oval-drop-earrings-273",
+   "type": "Earrings",
+   "price": 4560,
+   "compareAt": 4800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/RwwsF8chNLGUQoYn98hheDjj2dnsngTs57CUCYGC.webp?v=1791224853"
+   ]
+  },
+  {
+   "id": "15409138565271",
+   "title": "Tri-Tone Bar & Bead Bracelet",
+   "handle": "tri-tone-bar-bead-bracelet-272",
+   "type": "Bracelets",
+   "price": 9349.15,
+   "compareAt": 10999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Male",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Uhk28QRcctkVflRvPFFOfxvifeKcXcAoSOoXGQOt.webp?v=1791224852"
+   ]
+  },
+  {
+   "id": "15409139122327",
+   "title": "Black Bow Pear Drop Earrings",
+   "handle": "black-bow-pear-drop-earrings-278",
+   "type": "Earrings",
+   "price": 3150,
+   "compareAt": 3500,
+   "available": false,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/o9M8llzj5SqnGzzfVPpIp03bkpb399XvceJTqdXC.webp?v=1791224858"
+   ]
+  },
+  {
+   "id": "15409139024023",
+   "title": "Pearl Halo Bow Stud Earrings",
+   "handle": "pearl-halo-bow-stud-earrings-277",
+   "type": "Earrings",
+   "price": 2040,
+   "compareAt": 2400,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Yieu1VwB2xpSkW4jueg4GQDfjU0qQeDdCm3En4FY.webp?v=1791224857"
+   ]
+  },
+  {
+   "id": "15409138925719",
+   "title": "Classic Pearl Stud Earrings",
+   "handle": "classic-pearl-stud-earrings-276",
+   "type": "Earrings",
+   "price": 2125,
+   "compareAt": 2500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/YDUQcFGShlAU4T8natoXJ00kch8BOVqRwuJjXDXe.webp?v=1791224856"
+   ]
+  },
+  {
+   "id": "15409139351703",
+   "title": "Open Butterfly Pave Circle Stud Earrings",
+   "handle": "open-butterfly-pave-circle-stud-earrings-281",
+   "type": "Earrings",
+   "price": 3325,
+   "compareAt": 3500,
+   "available": false,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/fhHELbAAAEap3IpzzUaCFXYjKu9McpHU1NbSc2L8.webp?v=1791224861"
+   ]
+  },
+  {
+   "id": "15409139253399",
+   "title": "Emerald Cut & Blue Pear Drop Earrings",
+   "handle": "emerald-cut-blue-pear-drop-earrings-280",
+   "type": "Earrings",
+   "price": 2380,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/sTzmTBeh7KKmvjxG50uRaMjccmwrFJki8nKnZosV.webp?v=1791224860"
+   ]
+  },
+  {
+   "id": "15409139187863",
+   "title": "Pave Butterfly Pearl Stud Earrings",
+   "handle": "pave-butterfly-pearl-stud-earrings-279",
+   "type": "Earrings",
+   "price": 2250,
+   "compareAt": 2500,
+   "available": false,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/OP38eQuTLoeWMPPhOnS9QdwWf79Mw1u3TwPSiqMY.webp?v=1791224859"
+   ]
+  },
+  {
+   "id": "15409139581079",
+   "title": "Round Cluster Halo Stud Earrings",
+   "handle": "round-cluster-halo-stud-earrings-284",
+   "type": "Earrings",
+   "price": 2125,
+   "compareAt": 2500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/B9lPvwMcoOaEYpXZZ3Jqvz00FJRIMfohW4Zgwjfk.webp?v=1791224864"
+   ]
+  },
+  {
+   "id": "15409139515543",
+   "title": "Round Disc & Pearl Drop Earrings",
+   "handle": "round-disc-pearl-drop-earrings-283",
+   "type": "Earrings",
+   "price": 2040,
+   "compareAt": 2400,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Beu1HeMTlc7rIknGY9L4uKg0yjOb9XWb97L0YJcp.webp?v=1791224863"
+   ]
+  },
+  {
+   "id": "15409139417239",
+   "title": "Cherry Motif Pave Stud Earrings",
+   "handle": "cherry-motif-pave-stud-earrings-282",
+   "type": "Earrings",
+   "price": 1699.15,
+   "compareAt": 1999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/94PfT47AAeiQjHvnVCImemkaEKTpkLeOREwvY6Fc.webp?v=1791224862"
+   ]
+  },
+  {
+   "id": "15409139843223",
+   "title": "Oxidized Bird & Pearl Drop Earrings",
+   "handle": "oxidized-bird-pearl-drop-earrings-287",
+   "type": "Earrings",
+   "price": 1980,
+   "compareAt": 2200,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/FbLuxGXeoB69K2HHisFkKrH2Qbs1Z4w6YefKxrbD.webp?v=1791224866"
+   ]
+  },
+  {
+   "id": "15409139744919",
+   "title": "Baguette Petal Flower Stud Earrings",
+   "handle": "baguette-petal-flower-stud-earrings-286",
+   "type": "Earrings",
+   "price": 2250,
+   "compareAt": 2500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/lW3B0GaheKJ99KoYd0l1psKXThsf3nQpqhvmrmlA.webp?v=1791224865"
+   ]
+  },
+  {
+   "id": "15409139646615",
+   "title": "Double Emerald Cut Drop Earrings",
+   "handle": "double-emerald-cut-drop-earrings-285",
+   "type": "Earrings",
+   "price": 2380,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/CLlYhGwdUN0mpPw3vgsrF5M6UHlE39QPi2GxBUbe.webp?v=1791224865"
+   ]
+  },
+  {
+   "id": "15409140138135",
+   "title": "Sculptural Teardrop & Pearl Earrings",
+   "handle": "sculptural-teardrop-pearl-earrings-291",
+   "type": "Earrings",
+   "price": 2295,
+   "compareAt": 2700,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/vng8Mn1wwZ2PoMPvcUHyNrmzfXj7rAIOMzdtaw3l.webp?v=1791224870"
+   ]
+  },
+  {
+   "id": "15409140072599",
+   "title": "Classic Hoop & Pearl Drop Earrings",
+   "handle": "classic-hoop-pearl-drop-earrings-290",
+   "type": "Earrings",
+   "price": 2296,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/EDAynz4XescKLI0goe6Bx0qP0NXgza3DFNlzhfNa.webp?v=1791224869"
+   ]
+  },
+  {
+   "id": "15409139974295",
+   "title": "Pave Crescent Hoop Earrings with Pearl Trim",
+   "handle": "pave-crescent-hoop-earrings-with-pearl-trim-289",
+   "type": "Earrings",
+   "price": 3690,
+   "compareAt": 4500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/Qwrt0Yug5KvKwFBzFkKlRSWNklKxPFkv7D1dlyIY.webp?v=1791224868"
+   ]
+  },
+  {
+   "id": "15409139875991",
+   "title": "Layered Wave Enamel Square Stud Earrings",
+   "handle": "layered-wave-enamel-square-stud-earrings-288",
+   "type": "Earrings",
+   "price": 2380,
+   "compareAt": 2800,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/9q0Pn74eJTyzEgXGwQur2So5bHaBXBq3WKRjKyRl.webp?v=1791224867",
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/IMG_4948-fc86ca653c.jpg?v=1791399192"
+   ]
+  },
+  {
+   "id": "15409140367511",
+   "title": "Asscher Cut & Kite Accent Stud Earrings",
+   "handle": "asscher-cut-kite-accent-stud-earrings-294",
+   "type": "Earrings",
+   "price": 2210,
+   "compareAt": 2600,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/8Zvihmu2nax71G76S4KDq23AvJqanNdB5Qrz6IbW.webp?v=1791224873"
+   ]
+  },
+  {
+   "id": "15409140301975",
+   "title": "Butterfly Top Multicolor Circle Drop Earrings",
+   "handle": "butterfly-top-multicolor-circle-drop-earrings-293",
+   "type": "Earrings",
+   "price": 2250,
+   "compareAt": 2500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/iTtJYjLw9h6hY4foAU6TVm6Fm0ObBc2cdIxTkUBx.webp?v=1791224872"
+   ]
+  },
+  {
+   "id": "15409140236439",
+   "title": "Princess Cut Beaded Hoop Earrings with Butterfly Charm",
+   "handle": "princess-cut-beaded-hoop-earrings-with-butterfly-charm-292",
+   "type": "Earrings",
+   "price": 2699.1,
+   "compareAt": 2999,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/e6ylUayij0LmM9qsToJnsLmq7sFOuGyMBJMA3EZ2.webp?v=1791224871"
+   ]
+  },
+  {
+   "id": "15409140662423",
+   "title": "Blue Enamel Dolphin Stud Earrings",
+   "handle": "blue-enamel-dolphin-stud-earrings-297",
+   "type": "Earrings",
+   "price": 1870,
+   "compareAt": 2200,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/401PFrteCz1fRW8GpICx23pxB2dQdEVqWDltdr7Z.webp?v=1791224876"
+   ]
+  },
+  {
+   "id": "15409140564119",
+   "title": "Floral Pave Jhumka Earrings with Beaded Trim",
+   "handle": "floral-pave-jhumka-earrings-with-beaded-trim-296",
+   "type": "Earrings",
+   "price": 4509.18,
+   "compareAt": 5499,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/XJw96rGssLCTUURf713xIev9nxJPOLRKpVvUlkIf.webp?v=1791224875"
+   ]
+  },
+  {
+   "id": "15409140465815",
+   "title": "Floral Pave Jhumka Earrings with Emerald Accents",
+   "handle": "floral-pave-jhumka-earrings-with-emerald-accents-295",
+   "type": "Earrings",
+   "price": 4950,
+   "compareAt": 5500,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/rYZG3NNd7m4qkvWy80dn3ylZYAumWqJZ22Ws1fOn.webp?v=1791224874"
+   ]
+  },
+  {
+   "id": "15409141186711",
+   "title": "Marquise Halo & Fan Drop Earrings",
+   "handle": "marquise-halo-fan-drop-earrings-301",
+   "type": "Earrings",
+   "price": 1980,
+   "compareAt": 2200,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/bzwVhvW8oOfBT8V9oQS8Bqnt4es5tlq0vhVZuyfe.webp?v=1791224884"
+   ]
+  },
+  {
+   "id": "15409140891799",
+   "title": "Pave Circle Fan Drop Earrings with Pink Accents",
+   "handle": "pave-circle-fan-drop-earrings-with-pink-accents-300",
+   "type": "Earrings",
+   "price": 1870,
+   "compareAt": 2200,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/SOyRcQoA7NchFDI4ARWLXMgecAtBKZQniXavLyTj.webp?v=1791224883"
+   ]
+  },
+  {
+   "id": "15409140793495",
+   "title": "Baguette Fan & Amethyst Drop Earrings",
+   "handle": "baguette-fan-amethyst-drop-earrings-299",
+   "type": "Earrings",
+   "price": 2249.1,
+   "compareAt": 2499,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/ZKuTvPFtBL4Yuqze2dNaGEdGsH8jvhVACIY2KBiT.webp?v=1791224878"
+   ]
+  },
+  {
+   "id": "15409140695191",
+   "title": "Enamel Flower Stud Earrings with Center Stone",
+   "handle": "enamel-flower-stud-earrings-with-center-stone-298",
+   "type": "Earrings",
+   "price": 1870,
+   "compareAt": 2200,
+   "available": true,
+   "collections": [
+    "everyday-essentials"
+   ],
+   "gender": "Female",
+   "images": [
+    "https://cdn.shopify.com/s/files/1/0835/4113/1415/files/uBAY7v4NNquuuLlIO7mXZtjXF3mEYmZk0t25ALwf.webp?v=1791224877"
+   ]
+  }
+ ]
+}

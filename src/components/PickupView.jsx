@@ -1,110 +1,164 @@
-import { useEffect, useRef, useState } from 'react';
-import * as THREE from 'three';
-import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import { RoomEnvironment } from 'three-stdlib';
-import { JewelryModel, MODEL_LABELS } from '../three/models';
-import { pickupFov } from '../three/cameraFit';
-import { ContextGuard, webglSupported } from '../hooks/useWebgl';
-import { formatINR } from '../data/products';
+// Pick-up view — the REAL product photo on a soft studio backdrop with a
+// realistic shadow. Drag gives a subtle physical tilt that springs back;
+// pinch/wheel zooms the photo. Flipping price-tag, Add to tray and a
+// "buy on aajiva.com" deep link stay.
+import { useRef, useState, useCallback } from 'react';
+import {
+  imgUrl, deepLink, formatINR, discountPct, blurbFor, TYPE_LABELS,
+} from '../data/catalog';
 
-function LocalEnv() {
-  const { gl, scene } = useThree();
-  useEffect(() => {
-    const env = new RoomEnvironment();
-    const pmrem = new THREE.PMREMGenerator(gl);
-    const rt = pmrem.fromScene(env, 0.04);
-    scene.environment = rt.texture;
-    return () => {
-      scene.environment = null;
-      rt.dispose();
-      pmrem.dispose();
-    };
-  }, [gl, scene]);
-  return null;
-}
+function PhotoStage({ product }) {
+  const [active, setActive] = useState(0);
+  const [zoom, setZoom] = useState(1);
+  const wrapRef = useRef(null);
+  const tiltRef = useRef(null);
+  const drag = useRef(null); // {startX,startY,tiltX,tiltY} or null
+  const pinch = useRef(null); // {startDist, startZoom} or null
+  const raf = useRef(0);
 
-/* Widen the pick-up camera on portrait screens so the piece stays in frame. */
-function PickupFraming() {
-  const { camera, size } = useThree();
-  useEffect(() => {
-    const fov = pickupFov(size.width / Math.max(size.height, 1));
-    if (Math.abs(camera.fov - fov) > 0.01) {
-      camera.fov = fov;
-      camera.updateProjectionMatrix();
+  const count = Math.max(product.images.length, 1);
+  const src = imgUrl(product.images[active] || product.images[0], 1200);
+  const zoomRef = useRef(zoom);
+  zoomRef.current = zoom;
+
+  const applyTilt = useCallback((tx, ty) => {
+    cancelAnimationFrame(raf.current);
+    raf.current = requestAnimationFrame(() => {
+      if (tiltRef.current) {
+        tiltRef.current.style.transform = `rotateX(${ty}deg) rotateY(${tx}deg) scale(${zoomRef.current})`;
+      }
+    });
+  }, []);
+
+  const springBack = useCallback(() => {
+    if (!tiltRef.current) return;
+    tiltRef.current.style.transition = 'transform 0.45s cubic-bezier(0.2, 0.9, 0.25, 1.2)';
+    tiltRef.current.style.transform = `rotateX(0deg) rotateY(0deg) scale(${zoomRef.current})`;
+    setTimeout(() => {
+      if (tiltRef.current) tiltRef.current.style.transition = '';
+    }, 480);
+  }, []);
+
+  const pointers = useRef(new Map());
+
+  const onPointerDown = (e) => {
+    wrapRef.current?.setPointerCapture?.(e.pointerId);pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (pointers.current.size === 1) {
+      const r = wrapRef.current.getBoundingClientRect();
+      drag.current = {
+        id: e.pointerId,
+        cx: r.left + r.width / 2,
+        cy: r.top + r.height / 2,
+        w: r.width,
+        h: r.height,
+      };
+    } else if (pointers.current.size === 2) {
+      const [a, b] = [...pointers.current.values()];
+      pinch.current = {
+        startDist: Math.hypot(a.x - b.x, a.y - b.y),
+        startZoom: zoomRef.current,
+      };
+      drag.current = null;
     }
-  }, [camera, size.width, size.height]);
-  return null;
-}
+  };
 
-/* Gentle turntable until the visitor grabs it. */
-function Turntable({ children, auto }) {
-  const ref = useRef();
-  const [grabbed, setGrabbed] = useState(false);
-  useFrame((_, dt) => {
-    if (ref.current && auto && !grabbed) ref.current.rotation.y += dt * 0.7;
-  });
+  const onPointerMove = (e) => {
+    if (!pointers.current.has(e.pointerId)) return;
+    pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (pinch.current && pointers.current.size === 2) {
+      const [a, b] = [...pointers.current.values()];
+      const d = Math.hypot(a.x - b.x, a.y - b.y);
+      if (pinch.current.startDist > 0) {
+        const z = Math.min(3.5, Math.max(1, pinch.current.startZoom * (d / pinch.current.startDist)));
+        setZoom(z);
+      }
+      return;
+    }
+    if (drag.current && drag.current.id === e.pointerId) {
+      const dx = (e.clientX - drag.current.cx) / (drag.current.w / 2);
+      const dy = (e.clientY - drag.current.cy) / (drag.current.h / 2);
+      const tx = Math.max(-14, Math.min(14, dx * 14));
+      const ty = Math.max(-14, Math.min(14, -dy * 14));
+      if (tiltRef.current) tiltRef.current.style.transition = '';
+      applyTilt(tx, ty);
+    }
+  };
+
+  const endPointer = (e) => {
+    pointers.current.delete(e.pointerId);
+    if (pointers.current.size < 2) pinch.current = null;
+    if (pointers.current.size === 0) {
+      drag.current = null;
+      springBack();
+    }
+  };
+
+  const onWheel = (e) => {
+    e.preventDefault();
+    const z = Math.min(3.5, Math.max(1, zoomRef.current - e.deltaY * 0.002));
+    setZoom(z);
+  };
+
   return (
-    <group
-      ref={ref}
-      onPointerDown={() => setGrabbed(true)}
-    >
-      {children}
-    </group>
+    <div className="flex flex-col h-full">
+      {/* studio stage */}
+      <div
+        ref={wrapRef}
+        onPointerDown={onPointerDown}
+        onPointerMove={onPointerMove}
+        onPointerUp={endPointer}
+        onPointerCancel={endPointer}
+        onWheel={onWheel}
+        className="relative flex-1 min-h-0 overflow-hidden cursor-grab active:cursor-grabbing touch-none select-none"
+        style={{
+          background:
+            'radial-gradient(120% 90% at 50% 30%, #fbf8f1 0%, #f1e9d8 55%, #e2d5ba 100%)',
+        }}
+      >
+        <div className="absolute inset-0 flex items-center justify-center p-6 md:p-10" style={{ perspective: '900px' }}>
+          <div ref={tiltRef} className="relative" style={{ transformStyle: 'preserve-3d', maxHeight: '100%' }}>
+            <img
+              key={src}
+              src={src}
+              alt={product.title}
+              draggable={false}
+              className="max-h-[42dvh] md:max-h-[60dvh] w-auto max-w-full rounded-lg animate-fade-in"
+              style={{
+                boxShadow:
+                  '0 30px 60px -18px rgba(43,37,28,0.45), 0 12px 24px -12px rgba(43,37,28,0.35)',
+              }}
+            />
+          </div>
+        </div>
+        {/* thumbnail strip */}
+        {count > 1 && (
+          <div className="absolute bottom-3 inset-x-0 flex justify-center gap-2 px-4">
+            {product.images.map((im, i) => (
+              <button
+                key={i}
+                onClick={(e) => { e.stopPropagation(); setActive(i); }}
+                aria-label={`Photo ${i + 1}`}
+                className={`w-14 h-14 rounded-lg overflow-hidden border-2 bg-white transition-colors ${
+                  i === active ? 'border-charcoal-900' : 'border-white/70'
+                }`}
+              >
+                <img src={imgUrl(im, 120)} alt="" className="w-full h-full object-cover" />
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+      <p className="shrink-0 text-center py-2 text-[11px] tracking-[0.2em] uppercase text-charcoal-700/60 bg-transparent">
+        Drag to tilt · {count > 1 ? 'Tap thumbnails · ' : ''}Pinch or scroll to zoom
+      </p>
+    </div>
   );
 }
 
-function Scene({ product, isDesktop, reducedMotion }) {
-  return (
-    <>
-      <LocalEnv />
-      <PickupFraming />
-      <color attach="background" args={['#f6f1e7']} />
-      <ambientLight intensity={0.5} />
-      <spotLight position={[2.5, 4, 3]} angle={0.6} penumbra={0.7} intensity={isDesktop ? 70 : 35} color="#ffe8c4" />
-      <pointLight position={[-2.5, 1.5, 2.5]} color="#ffd9a8" intensity={isDesktop ? 14 : 8} distance={10} />
-      {/* velvet stand */}
-      <mesh position={[0, -0.85, 0]} receiveShadow={isDesktop}>
-        <cylinderGeometry args={[1.1, 1.25, 0.35, 40]} />
-        <meshStandardMaterial color="#9aa78d" roughness={0.95} />
-      </mesh>
-      <mesh position={[0, -0.62, 0]}>
-        <cylinderGeometry args={[0.55, 0.7, 0.25, 32]} />
-        <meshStandardMaterial color="#c9ced6" roughness={0.25} metalness={0.9} />
-      </mesh>
-      <Turntable auto={!reducedMotion}>
-        <group position={[0, 0.15, 0]}>
-          <JewelryModel model={product.model} gem={product.gem} scale={2.6} />
-        </group>
-      </Turntable>
-      <OrbitControls
-        makeDefault
-        enablePan={false}
-        enableDamping
-        autoRotate={false}
-        minDistance={1.6}
-        maxDistance={7}
-        minPolarAngle={0.35}
-        maxPolarAngle={Math.PI - 0.6}
-        target={[0, 0.1, 0]}
-      />
-    </>
-  );
-}
-
-export default function PickupView({ product, onClose, onAdd, isDesktop, reducedMotion }) {
+export default function PickupView({ product, onClose, onAdd, isDesktop }) {
   const [flipped, setFlipped] = useState(false);
   const [added, setAdded] = useState(false);
-  const [glLost, setGlLost] = useState(false);
-  const [canvasKey, setCanvasKey] = useState(0);
-  const glRef = useRef(null);
-  // feature-detect once per mount — creating throwaway canvases on every
-  // render would itself pressure the GPU context budget
-  const [supported] = useState(webglSupported);
-  const glOk = supported && !glLost;
-  const isTouch =
-    typeof window !== 'undefined' &&
-    (navigator.maxTouchPoints > 0 || 'ontouchstart' in window);
+  const pct = discountPct(product);
 
   const handleAdd = () => {
     onAdd(product.id);
@@ -112,76 +166,31 @@ export default function PickupView({ product, onClose, onAdd, isDesktop, reduced
     setTimeout(() => setAdded(false), 1600);
   };
 
-  const retryGl = () => {
-    try {
-      glRef.current?.forceContextRestore();
-    } catch {
-      /* remount covers it */
-    }
-    setGlLost(false);
-    setCanvasKey((k) => k + 1);
-  };
-
   return (
     <div className="absolute inset-0 z-30 flex flex-col md:flex-row animate-fade-in bg-ivory-100">
-      {/* 3D — fixed half-screen canvas on phones, flexible on desktop */}
+      {/* photo — fixed half-screen canvas on phones, flexible on desktop */}
       <div className="pickup-canvas relative shrink-0 md:h-auto md:min-h-0 md:flex-1 bg-ivory-100">
-        {glOk ? (
-          <Canvas
-            key={canvasKey}
-            dpr={[1, isDesktop ? 1.75 : 1.25]}
-            shadows={isDesktop}
-            gl={{ antialias: true }}
-            camera={{ fov: 42, near: 0.1, far: 40, position: [0, 0.7, 4.2] }}
-          >
-            <ContextGuard
-              glRef={glRef}
-              onLost={() => setGlLost(true)}
-              onRestored={() => setGlLost(false)}
-            />
-            <Scene product={product} isDesktop={isDesktop} reducedMotion={reducedMotion} />
-          </Canvas>
-        ) : (
-          <div className="absolute inset-0 flex items-center justify-center p-6">
-            <div className="text-center max-w-xs rounded-2xl bg-white border border-silver-300/70 shadow-md p-6">
-              <p className="font-display text-xl text-charcoal-900">3D preview unavailable</p>
-              <p className="text-[13px] text-charcoal-700/70 mt-1 leading-relaxed">
-                The 3D view couldn't start on this device — the details and Add to tray below still work.
-              </p>
-              <button
-                onClick={retryGl}
-                className="mt-3 rounded-full bg-charcoal-900 text-ivory-50 px-6 min-h-[44px] text-xs font-bold tracking-[0.2em] uppercase hover:bg-charcoal-800 transition-colors"
-              >
-                Try 3D again
-              </button>
-            </div>
-          </div>
-        )}
+        <PhotoStage product={product} />
         <button
           onClick={onClose}
           aria-label="Back to the shop"
-          className="absolute left-4 rounded-full bg-charcoal-900/85 text-ivory-50 w-11 h-11 flex items-center justify-center text-lg hover:bg-charcoal-800"
+          className="absolute left-4 rounded-full bg-charcoal-900/85 text-ivory-50 w-11 h-11 flex items-center justify-center text-lg hover:bg-charcoal-800 z-10"
           style={{ top: 'max(1rem, env(safe-area-inset-top))' }}
         >
           ←
         </button>
-        {glOk && (
-          <p className="absolute bottom-3 inset-x-0 text-center text-[11px] tracking-[0.2em] uppercase text-charcoal-700/60">
-            {isTouch ? 'Drag to turn · Pinch to zoom' : 'Drag to turn · Scroll to zoom'}
-          </p>
-        )}
       </div>
 
       {/* details sheet — scrollable, Add-to-tray pinned at the bottom */}
       <div className="flex-1 min-h-0 md:max-w-md bg-ivory-50 border-t md:border-t-0 md:border-l border-silver-300/60 flex flex-col overflow-hidden">
         <div className="flex-1 overflow-y-auto thin-scroll p-5 md:p-8">
           <p className="text-[11px] tracking-[0.35em] uppercase text-sage-600 font-bold">
-            {MODEL_LABELS[product.model]} · 925 Sterling Silver
+            {TYPE_LABELS[product.type] || product.type} · 925 Sterling Silver
           </p>
           <h2 className="font-display text-xl min-[400px]:text-2xl md:text-3xl text-charcoal-900 mt-2 leading-snug">
-            {product.name}
+            {product.title}
           </h2>
-          <p className="font-serif-alt italic text-charcoal-700 mt-2">{product.blurb}</p>
+          <p className="font-serif-alt italic text-charcoal-700 mt-2">{blurbFor(product)}</p>
 
           <div className={`flip-scene mt-4 md:mt-5 ${flipped ? 'flipped' : ''}`}>
             <div className="flip-inner relative min-h-40 md:min-h-44">
@@ -189,8 +198,13 @@ export default function PickupView({ product, onClose, onAdd, isDesktop, reduced
               <div className="flip-face rounded-2xl bg-white border border-silver-300/70 p-4 min-[400px]:p-5 shadow-md">
                 <div className="flex items-baseline gap-3 flex-wrap">
                   <span className="font-display text-2xl min-[400px]:text-3xl text-charcoal-900">{formatINR(product.price)}</span>
-                  {product.mrp && (
-                    <span className="text-silver-500 line-through text-base min-[400px]:text-lg">{formatINR(product.mrp)}</span>
+                  {product.compareAt && (
+                    <span className="text-silver-500 line-through text-base min-[400px]:text-lg">{formatINR(product.compareAt)}</span>
+                  )}
+                  {pct > 0 && (
+                    <span className="rounded-full bg-sage-600 text-ivory-50 text-[11px] font-bold px-2.5 py-1">
+                      Save {pct}%
+                    </span>
                   )}
                 </div>
                 <p className="text-[12px] text-charcoal-700/70 mt-1">Skin-safe · made for everyday wear</p>
@@ -235,12 +249,12 @@ export default function PickupView({ product, onClose, onAdd, isDesktop, reduced
             {added ? '✓ On your tray' : 'Add to tray'}
           </button>
           <a
-            href="https://aajiva.com/shop"
+            href={deepLink(product.handle)}
             target="_blank"
             rel="noreferrer"
-            className="text-center text-[12px] font-semibold text-charcoal-700 underline underline-offset-4"
+            className="text-center rounded-full border border-charcoal-900/25 py-3 text-[12px] font-bold tracking-[0.12em] uppercase text-charcoal-800 hover:bg-ivory-200"
           >
-            See it on aajiva.com →
+            View / buy on aajiva.com →
           </a>
         </div>
       </div>
