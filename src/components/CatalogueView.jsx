@@ -23,7 +23,7 @@ function ProductCard({ product, onPick, onAdd, addedTick }) {
         />
         {discountPct(product) > 0 && (
           <span className="absolute top-2 left-2 rounded-full bg-charcoal-900/90 text-ivory-50 text-[10px] font-bold px-2.5 py-1">
-            −{discountPct(product)}%
+            {discountPct(product)}% OFF
           </span>
         )}
       </button>
