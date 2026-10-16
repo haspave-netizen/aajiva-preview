@@ -1,37 +1,31 @@
 @import "tailwindcss";
 
-/* ── Aajiva design tokens: quiet luxury — warm ivory, brushed silver, charcoal, sage velvet, blush ── */
+/* ── Aajiva — dark premium cinema. Near-black charcoal, warm gold, ivory serif. ── */
 @theme {
   --font-display: "Marcellus", "Cormorant Garamond", Georgia, serif;
   --font-serif-alt: "Cormorant Garamond", Georgia, serif;
   --font-body: "Manrope", system-ui, sans-serif;
 
-  --color-ivory-50: #faf7f0;
-  --color-ivory-100: #f6f1e7;
-  --color-ivory-200: #efe7d5;
-  --color-ivory-300: #e4d8bd;
+  --color-night-950: #0c0b09;
+  --color-night-900: #141210;
+  --color-night-850: #1a1714;
+  --color-night-800: #221e19;
+  --color-night-700: #322c26;
 
-  --color-silver-300: #c9ced6;
-  --color-silver-400: #aab1bb;
-  --color-silver-500: #8a8f98;
-  --color-silver-600: #6b7078;
+  --color-gold-200: #ecd9a8;
+  --color-gold-300: #e2c57f;
+  --color-gold-400: #d4af5f;
+  --color-gold-500: #c2983f;
+  --color-gold-600: #9a762c;
 
-  --color-charcoal-700: #3c3f45;
-  --color-charcoal-800: #2b2d33;
-  --color-charcoal-900: #1f2126;
-
-  --color-sage-200: #cfd6c6;
-  --color-sage-400: #9aa78d;
-  --color-sage-600: #6f7d63;
-  --color-sage-800: #4a5442;
-
-  --color-blush-200: #f3ddd6;
-  --color-blush-400: #e3b8ac;
+  --color-ivory-50: #f8f4ea;
+  --color-ivory-200: #e9e1cf;
+  --color-ivory-400: #c4b89e;
+  --color-ivory-600: #8f8672;
 
   --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
   --animate-fade-in: fade-in 0.9s ease both;
-  --animate-door-glow: door-glow 3.4s ease-in-out infinite;
-  --animate-spin-slow: spin 14s linear infinite;
+  --animate-glow-pulse: glow-pulse 4.5s ease-in-out infinite;
 }
 
 @keyframes fade-up {
@@ -42,63 +36,59 @@
   from { opacity: 0; }
   to { opacity: 1; }
 }
-@keyframes door-glow {
+@keyframes glow-pulse {
   0%, 100% { opacity: 0.55; }
-  50% { opacity: 1; }
+  50% { opacity: 0.9; }
 }
 
 html, body, #root {
   height: 100%;
-  /* dynamic viewport height: mobile browser toolbars no longer jump/crop the app */
   height: 100dvh;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: var(--font-body);
-  background: var(--color-ivory-100);
-  color: var(--color-charcoal-800);
+  background: var(--color-night-950);
+  color: var(--color-ivory-50);
   -webkit-font-smoothing: antialiased;
-  overscroll-behavior: none;
+  overscroll-behavior-y: none;
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
 }
 
-/* R3F canvases own their gestures (orbit drag/rotate); the rest of the app is tap-only */
-#root canvas {
-  touch-action: none;
+/* ── scroll reveal (IntersectionObserver adds .visible) ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* fluid entrance title: fits 320px phones without shrinking desktop */
-.entrance-title {
-  font-size: clamp(2.5rem, 13.5vw, 4.5rem);
-  letter-spacing: clamp(0.08em, 2.2vw, 0.18em);
-  line-height: 1.05;
+/* ── horizontal snap rows ── */
+.snap-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
-.entrance-tagline {
-  font-size: clamp(1rem, 4.6vw, 1.25rem);
-}
-/* pick-up 3D pane: fixed half-screen on phones (md:h-auto/md:flex-1 take over on desktop) */
-@media (max-width: 767.98px) {
-  .pickup-canvas {
-    height: 50dvh;
-    min-height: 240px;
-  }
-}
-/* short viewports (landscape phones): tighten entrance padding, leave room for the pick-up sheet */
-@media (max-height: 520px) {
-  .entrance-tight {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-}
-@media (max-width: 767.98px) and (max-height: 520px) {
-  .pickup-canvas {
-    height: 44dvh;
-    min-height: 170px;
-  }
-}
+.snap-row::-webkit-scrollbar { display: none; }
+.snap-row > * { scroll-snap-align: start; flex-shrink: 0; }
 
-/* flip card for the pick-up price tag */
+/* thin scrollbar for trays / panels */
+.thin-scroll::-webkit-scrollbar { width: 5px; height: 5px; }
+.thin-scroll::-webkit-scrollbar-thumb { background: var(--color-night-700); border-radius: 3px; }
+
+/* ── flip card for the pick-up price tag ── */
 .flip-scene { perspective: 1200px; }
 .flip-inner {
   transform-style: preserve-3d;
@@ -108,6 +98,35 @@ body {
 .flip-face { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
 .flip-back { transform: rotateY(180deg); }
 
-/* thin scrollbar for trays */
-.thin-scroll::-webkit-scrollbar { width: 5px; }
-.thin-scroll::-webkit-scrollbar-thumb { background: var(--color-silver-400); border-radius: 3px; }
+/* gold hairline text divider */
+.gold-rule {
+  background: linear-gradient(90deg, transparent, var(--color-gold-500), transparent);
+  height: 1px;
+}
+
+/* fluid hero headline: fits 320px phones without shrinking desktop */
+.hero-title {
+  font-size: clamp(2.6rem, 11vw, 6.5rem);
+  line-height: 1.02;
+  letter-spacing: 0.06em;
+}
+.section-title {
+  font-size: clamp(1.9rem, 7.5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: 0.05em;
+}
+
+/* featured visual frame */
+.featured-frame {
+  box-shadow:
+    0 40px 80px -30px rgba(0, 0, 0, 0.85),
+    0 0 0 1px rgba(212, 175, 95, 0.28),
+    0 0 120px -20px rgba(212, 175, 95, 0.22);
+}
+
+/* reduced motion: reveal everything, kill parallax/smooth scroll */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .animate-glow-pulse { animation: none; }
+}

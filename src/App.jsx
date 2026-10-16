@@ -1,176 +1,108 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import * as THREE from 'three';
-import { Canvas } from '@react-three/fiber';
-import BoutiqueScene from './three/BoutiqueScene';
-import Entrance from './components/Entrance';
-import ZoneNav from './components/ZoneNav';
-import ZoneCard from './components/ZoneCard';
+// Aajiva — dark premium cinematic boutique. A single scrolling page:
+// hero, trust strip, bestsellers, 8 category sections each led by a
+// featured cinematic visual, brand story, full catalogue, giant footer CTA.
+import { useCallback, useMemo, useState } from 'react';
+import TopBar from './components/TopBar';
+import Hero from './components/Hero';
+import Bestsellers from './components/Bestsellers';
+import CategorySection from './components/CategorySection';
+import BrandSection from './components/BrandSection';
+import FooterCta from './components/FooterCta';
+import CatalogueView from './components/CatalogueView';
 import PickupView from './components/PickupView';
 import TrayDrawer from './components/TrayDrawer';
-import Footer from './components/Footer';
-import NoGlFallback from './components/NoGlFallback';
-import CatalogueView from './components/CatalogueView';
 import { useTray } from './hooks/useTray';
-import { useViewport } from './hooks/useViewport';
-import { ContextGuard, webglSupported } from './hooks/useWebgl';
-import { productById, zoneProducts } from './data/catalog';
-import { shelfSlice, shelfCount } from './data/shelves';
+import { useRevealGroup } from './hooks/useReveal';
+import { productById, CATEGORY_LINES } from './data/catalog';
 
-/* Zone labels for the shelf pager, e.g. "Bracelets · Anklets". */
-function zoneLabel(zoneId) {
-  switch (zoneId) {
-    case 'rings': return 'Rings · Toe rings';
-    case 'gallery': return 'Pendants · Earrings';
-    case 'edits': return 'Bracelets · Anklets';
-    case 'gifting': return 'Sets · Silver rakhis';
-    case 'central': return 'Bestsellers';
-    default: return '';
-  }
+/* Section roster — nav order. Rings folds in Toe Rings (both live at #rings). */
+const SECTIONS = [
+  { types: ['Rings', 'Toe Rings'], title: 'Rings', line: CATEGORY_LINES.Rings },
+  { types: ['Earrings'], title: 'Earrings', line: CATEGORY_LINES.Earrings },
+  { types: ['Pendants'], title: 'Pendants', line: CATEGORY_LINES.Pendants },
+  { types: ['Bracelets'], title: 'Bracelets', line: CATEGORY_LINES.Bracelets },
+  { types: ['Anklets'], title: 'Anklets', line: CATEGORY_LINES.Anklets },
+  { types: ['Sets'], title: 'Sets', line: CATEGORY_LINES.Sets },
+  { types: ['Silver Rakhi'], title: 'Silver Rakhis', line: CATEGORY_LINES['Silver Rakhi'] },
+];
+
+function TrustStrip() {
+  const ref = useRevealGroup();
+  const items = [
+    '925 sterling silver',
+    'Skin-safe, everyday wear',
+    '239 real pieces',
+    'Prices as on aajiva.com',
+  ];
+  return (
+    <div className="border-y border-gold-500/15 bg-night-900/40">
+      <div
+        ref={ref}
+        className="max-w-7xl mx-auto px-4 md:px-8 py-5 grid grid-cols-2 md:grid-cols-4 gap-y-3 gap-x-6"
+      >
+        {items.map((t, i) => (
+          <p
+            key={t}
+            className={`reveal text-[11px] tracking-[0.28em] uppercase text-ivory-200/60 text-center ${
+              i % 2 === 1 ? 'md:border-l border-gold-500/15' : ''
+            } ${i > 1 ? 'md:border-l border-gold-500/15' : ''}`}
+            style={{ '--reveal-delay': `${i * 80}ms` }}
+          >
+            {t}
+          </p>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default function App() {
-  const [entered, setEntered] = useState(false);
-  const [zoneId, setZoneId] = useState('central');
   const [picked, setPicked] = useState(null);
   const [trayOpen, setTrayOpen] = useState(false);
-  const [catalogueOpen, setCatalogueOpen] = useState(false);
-  const [shelves, setShelves] = useState({});
   const { tray, add, remove, setQty, count } = useTray();
 
-  const vp = useViewport();
-  const isDesktop = vp.isDesktop;
-  const [reducedMotion, setReducedMotion] = useState(
-    () => typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+  const handlePick = useCallback((product) => setPicked(product), []);
+
+  const total = useMemo(
+    () =>
+      Object.entries(tray).reduce(
+        (sum, [id, qty]) => sum + (productById(id)?.price || 0) * qty,
+        0
+      ),
+    [tray]
   );
-
-  // WebGL health: feature-detect up front, recover from GPU context loss.
-  const glSupported = useMemo(webglSupported, []);
-  const [glLost, setGlLost] = useState(false);
-  const [canvasKey, setCanvasKey] = useState(0);
-  const glRef = useRef(null);
-
-  const retryGl = useCallback(() => {
-    try {
-      glRef.current?.forceContextRestore();
-    } catch {
-      /* older renderers may not expose it — remount covers it */
-    }
-    setGlLost(false);
-    setCanvasKey((k) => k + 1); // fresh Canvas = fresh GL context
-  }, []);
-
-  useEffect(() => {
-    const mq = window.matchMedia?.('(prefers-reduced-motion: reduce)');
-    const onMotion = (e) => setReducedMotion(e.matches);
-    mq?.addEventListener?.('change', onMotion);
-    return () => mq?.removeEventListener?.('change', onMotion);
-  }, []);
-
-  const handlePick = useCallback((product) => {
-    setPicked(product);
-    setCatalogueOpen(false);
-  }, []);
-
-  const zoneList = useMemo(() => zoneProducts(zoneId), [zoneId]);
-  const shelf = shelves[zoneId] || 0;
-  const shelfProducts = useMemo(
-    () => shelfSlice(zoneList, shelf),
-    [zoneList, shelf]
-  );
-
-  const changeZone = useCallback((id) => {
-    setZoneId(id);
-    setShelves((s) => ({ ...s, [id]: 0 })); // shelves restart at page 1 per zone
-  }, []);
-
-  const setShelf = useCallback((v) => {
-    setShelves((s) => {
-      const cur = s[zoneId] || 0;
-      const next = typeof v === 'function' ? v(cur) : v;
-      return { ...s, [zoneId]: Math.min(Math.max(next, 0), shelfCount(zoneList.length) - 1) };
-    });
-  }, [zoneId, zoneList.length]);
-
-  const total = Object.entries(tray).reduce(
-    (sum, [id, qty]) => sum + (productById(id)?.price || 0) * qty,
-    0
-  );
-
-  const noGl = !glSupported || glLost;
 
   return (
-    <div className="relative h-[100dvh] w-full overflow-hidden bg-ivory-100 select-none">
-      {/* main 3D boutique */}
-      {glSupported && (
-        <Canvas
-          key={canvasKey}
-          className="!absolute !inset-0"
-          dpr={[1, isDesktop ? 1.75 : 1.25]}
-          shadows={isDesktop}
-          frameloop={picked ? 'never' : 'always'}
-          gl={{
-            antialias: true,
-            powerPreference: 'high-performance',
-            toneMapping: THREE.ACESFilmicToneMapping,
-            outputColorSpace: THREE.SRGBColorSpace,
-          }}
-          camera={{ fov: 55, near: 0.1, far: 80, position: [0, 1.7, 11.2] }}
-        >
-          <ContextGuard
-            glRef={glRef}
-            onLost={() => setGlLost(true)}
-            onRestored={() => setGlLost(false)}
-          />
-          <BoutiqueScene
-            zoneId={zoneId}
-            entered={entered}
-            shelfProducts={shelfProducts}
+    <div className="min-h-[100dvh] w-full bg-night-950 text-ivory-50 overflow-x-hidden">
+      <TopBar trayCount={count} onTrayOpen={() => setTrayOpen(true)} />
+
+      <main>
+        <Hero onPick={handlePick} />
+        <TrustStrip />
+        <Bestsellers onPick={handlePick} onAdd={add} />
+
+        {SECTIONS.map((s) => (
+          <CategorySection
+            key={s.title}
+            types={s.types}
+            title={s.title}
+            line={s.line}
             onPick={handlePick}
-            isDesktop={isDesktop}
-            reducedMotion={reducedMotion}
+            onAdd={add}
           />
-        </Canvas>
-      )}
+        ))}
 
-      {!entered && <Entrance onEnter={() => { setEntered(true); changeZone('central'); }} />}
+        <BrandSection />
 
-      {entered && !picked && (
-        <>
-          <ZoneCard
-            zoneId={zoneId}
-            isPhone={vp.isPhone}
-            shelf={shelf}
-            onShelf={setShelf}
-            zoneLabel={zoneLabel(zoneId)}
-          />
-          {noGl && <NoGlFallback onRetry={retryGl} onPick={handlePick} add={add} />}
-          <ZoneNav
-            zoneId={zoneId}
-            onZone={changeZone}
-            trayCount={count}
-            onTrayOpen={() => setTrayOpen(true)}
-            onCatalogueOpen={() => setCatalogueOpen(true)}
-          />
-          <Footer />
-        </>
-      )}
+        {/* full catalogue — an inline section, not an overlay */}
+        <section id="all-pieces" className="relative py-16 md:py-24 scroll-mt-20">
+          <CatalogueView onPick={handlePick} onAdd={add} showClose={false} inline />
+        </section>
 
-      {catalogueOpen && (
-        <CatalogueView
-          onClose={() => setCatalogueOpen(false)}
-          onPick={handlePick}
-          onAdd={add}
-        />
-      )}
+        <FooterCta />
+      </main>
 
-      {picked && (
-        <PickupView
-          product={picked}
-          onClose={() => setPicked(null)}
-          onAdd={add}
-          isDesktop={isDesktop}
-        />
-      )}
+      {picked && <PickupView product={picked} onClose={() => setPicked(null)} onAdd={add} />}
 
       <TrayDrawer
         open={trayOpen}

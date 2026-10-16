@@ -112,7 +112,7 @@ function PhotoStage({ product }) {
         className="relative flex-1 min-h-0 overflow-hidden cursor-grab active:cursor-grabbing touch-none select-none"
         style={{
           background:
-            'radial-gradient(120% 90% at 50% 30%, #fbf8f1 0%, #f1e9d8 55%, #e2d5ba 100%)',
+            'radial-gradient(120% 90% at 50% 30%, #221e19 0%, #141210 55%, #0c0b09 100%)',
         }}
       >
         <div className="absolute inset-0 flex items-center justify-center p-6 md:p-10" style={{ perspective: '900px' }}>
@@ -125,7 +125,7 @@ function PhotoStage({ product }) {
               className="max-h-[42dvh] md:max-h-[60dvh] w-auto max-w-full rounded-lg animate-fade-in"
               style={{
                 boxShadow:
-                  '0 30px 60px -18px rgba(43,37,28,0.45), 0 12px 24px -12px rgba(43,37,28,0.35)',
+                  '0 40px 80px -20px rgba(0,0,0,0.85), 0 0 60px -10px rgba(212,175,95,0.25)',
               }}
             />
           </div>
@@ -139,7 +139,7 @@ function PhotoStage({ product }) {
                 onClick={(e) => { e.stopPropagation(); setActive(i); }}
                 aria-label={`Photo ${i + 1}`}
                 className={`w-14 h-14 rounded-lg overflow-hidden border-2 bg-white transition-colors ${
-                  i === active ? 'border-charcoal-900' : 'border-white/70'
+                  i === active ? 'border-gold-400' : 'border-night-700'
                 }`}
               >
                 <img src={imgUrl(im, 120)} alt="" className="w-full h-full object-cover" />
@@ -148,7 +148,7 @@ function PhotoStage({ product }) {
           </div>
         )}
       </div>
-      <p className="shrink-0 text-center py-2 text-[11px] tracking-[0.2em] uppercase text-charcoal-700/60 bg-transparent">
+      <p className="shrink-0 text-center py-2 text-[11px] tracking-[0.2em] uppercase text-ivory-200/40 bg-transparent">
         Drag to tilt · {count > 1 ? 'Tap thumbnails · ' : ''}Pinch or scroll to zoom
       </p>
     </div>
@@ -167,14 +167,14 @@ export default function PickupView({ product, onClose, onAdd, isDesktop }) {
   };
 
   return (
-    <div className="absolute inset-0 z-30 flex flex-col md:flex-row animate-fade-in bg-ivory-100">
+    <div className="fixed inset-0 z-50 flex flex-col md:flex-row animate-fade-in bg-night-950">
       {/* photo — fixed half-screen canvas on phones, flexible on desktop */}
-      <div className="pickup-canvas relative shrink-0 md:h-auto md:min-h-0 md:flex-1 bg-ivory-100">
+      <div className="pickup-canvas relative shrink-0 md:h-auto md:min-h-0 md:flex-1 bg-night-950">
         <PhotoStage product={product} />
         <button
           onClick={onClose}
           aria-label="Back to the shop"
-          className="absolute left-4 rounded-full bg-charcoal-900/85 text-ivory-50 w-11 h-11 flex items-center justify-center text-lg hover:bg-charcoal-800 z-10"
+          className="absolute left-4 rounded-full bg-night-800/90 border border-gold-500/30 text-ivory-50 w-11 h-11 flex items-center justify-center text-lg hover:bg-night-700 z-10"
           style={{ top: 'max(1rem, env(safe-area-inset-top))' }}
         >
           ←
@@ -182,41 +182,41 @@ export default function PickupView({ product, onClose, onAdd, isDesktop }) {
       </div>
 
       {/* details sheet — scrollable, Add-to-tray pinned at the bottom */}
-      <div className="flex-1 min-h-0 md:max-w-md bg-ivory-50 border-t md:border-t-0 md:border-l border-silver-300/60 flex flex-col overflow-hidden">
+      <div className="flex-1 min-h-0 md:max-w-md bg-night-900 border-t md:border-t-0 md:border-l border-gold-500/15 flex flex-col overflow-hidden">
         <div className="flex-1 overflow-y-auto thin-scroll p-5 md:p-8">
-          <p className="text-[11px] tracking-[0.35em] uppercase text-sage-600 font-bold">
+          <p className="text-[11px] tracking-[0.35em] uppercase text-gold-300 font-bold">
             {TYPE_LABELS[product.type] || product.type} · 925 Sterling Silver
           </p>
-          <h2 className="font-display text-xl min-[400px]:text-2xl md:text-3xl text-charcoal-900 mt-2 leading-snug">
+          <h2 className="font-display text-xl min-[400px]:text-2xl md:text-3xl text-ivory-50 mt-2 leading-snug">
             {product.title}
           </h2>
-          <p className="font-serif-alt italic text-charcoal-700 mt-2">{blurbFor(product)}</p>
+          <p className="font-serif-alt italic text-ivory-200/60 mt-2">{blurbFor(product)}</p>
 
           <div className={`flip-scene mt-4 md:mt-5 ${flipped ? 'flipped' : ''}`}>
             <div className="flip-inner relative min-h-40 md:min-h-44">
               {/* front: price */}
-              <div className="flip-face rounded-2xl bg-white border border-silver-300/70 p-4 min-[400px]:p-5 shadow-md">
+              <div className="flip-face rounded-2xl bg-night-800 border border-gold-500/25 p-4 min-[400px]:p-5">
                 <div className="flex items-baseline gap-3 flex-wrap">
-                  <span className="font-display text-2xl min-[400px]:text-3xl text-charcoal-900">{formatINR(product.price)}</span>
+                  <span className="font-display text-2xl min-[400px]:text-3xl text-ivory-50">{formatINR(product.price)}</span>
                   {product.compareAt && (
-                    <span className="text-silver-500 line-through text-base min-[400px]:text-lg">{formatINR(product.compareAt)}</span>
+                    <span className="text-ivory-400/50 line-through text-base min-[400px]:text-lg">{formatINR(product.compareAt)}</span>
                   )}
                   {pct > 0 && (
-                    <span className="rounded-full bg-sage-600 text-ivory-50 text-[11px] font-bold px-2.5 py-1">
+                    <span className="rounded-full bg-gold-400 text-night-950 text-[11px] font-extrabold px-2.5 py-1">
                       Save {pct}%
                     </span>
                   )}
                 </div>
-                <p className="text-[12px] text-charcoal-700/70 mt-1">Skin-safe · made for everyday wear</p>
+                <p className="text-[12px] text-ivory-200/50 mt-1">Skin-safe · made for everyday wear</p>
                 <button
                   onClick={() => setFlipped(true)}
-                  className="mt-3 text-[12px] font-bold tracking-[0.2em] uppercase text-sage-600 underline underline-offset-4"
+                  className="mt-3 text-[12px] font-bold tracking-[0.2em] uppercase text-gold-300 underline underline-offset-4"
                 >
                   Flip the tag ↻
                 </button>
               </div>
               {/* back: details */}
-              <div className="flip-face flip-back absolute inset-0 rounded-2xl bg-charcoal-900 text-ivory-50 p-4 min-[400px]:p-5 shadow-md">
+              <div className="flip-face flip-back absolute inset-0 rounded-2xl bg-night-800 border border-gold-400/50 text-ivory-50 p-4 min-[400px]:p-5">
                 <p className="font-display text-lg tracking-[0.2em]">925</p>
                 <ul className="text-[13px] mt-2 space-y-1 text-ivory-50/85">
                   <li>· Genuine 925 sterling silver</li>
@@ -226,7 +226,7 @@ export default function PickupView({ product, onClose, onAdd, isDesktop }) {
                 </ul>
                 <button
                   onClick={() => setFlipped(false)}
-                  className="mt-3 text-[12px] font-bold tracking-[0.2em] uppercase text-silver-300 underline underline-offset-4"
+                  className="mt-3 text-[12px] font-bold tracking-[0.2em] uppercase text-gold-200 underline underline-offset-4"
                 >
                   Flip back ↻
                 </button>
@@ -237,13 +237,13 @@ export default function PickupView({ product, onClose, onAdd, isDesktop }) {
 
         {/* sticky action bar */}
         <div
-          className="shrink-0 p-5 pt-3 md:p-8 md:pt-2 bg-ivory-50 border-t border-silver-300/40 flex flex-col gap-3"
+          className="shrink-0 p-5 pt-3 md:p-8 md:pt-2 bg-night-900 border-t border-gold-500/15 flex flex-col gap-3"
           style={{ paddingBottom: 'max(1.25rem, env(safe-area-inset-bottom))' }}
         >
           <button
             onClick={handleAdd}
             className={`rounded-full min-h-[52px] py-4 text-sm font-bold tracking-[0.25em] uppercase transition-colors ${
-              added ? 'bg-sage-600 text-ivory-50' : 'bg-charcoal-900 text-ivory-50 hover:bg-charcoal-800'
+              added ? 'bg-gold-300 text-night-950' : 'bg-gold-400 text-night-950 hover:bg-gold-300'
             }`}
           >
             {added ? '✓ On your tray' : 'Add to tray'}
@@ -252,7 +252,7 @@ export default function PickupView({ product, onClose, onAdd, isDesktop }) {
             href={deepLink(product.handle)}
             target="_blank"
             rel="noreferrer"
-            className="text-center rounded-full border border-charcoal-900/25 py-3 text-[12px] font-bold tracking-[0.12em] uppercase text-charcoal-800 hover:bg-ivory-200"
+            className="text-center rounded-full border border-gold-500/40 py-3 text-[12px] font-bold tracking-[0.12em] uppercase text-gold-200 hover:bg-gold-400 hover:text-night-950"
           >
             View / buy on aajiva.com →
           </a>

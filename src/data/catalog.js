@@ -110,3 +110,46 @@ export const TYPE_LABELS = {
 export const TYPE_ORDER = ['Bracelets', 'Earrings', 'Anklets', 'Sets', 'Silver Rakhi', 'Pendants', 'Rings', 'Toe Rings'];
 
 export const typeCount = (type) => CATALOG.filter((p) => p.type === type).length;
+
+/* Slug for section anchors. */
+export const TYPE_SLUG = {
+  Rings: 'rings',
+  'Toe Rings': 'rings',
+  Earrings: 'earrings',
+  Pendants: 'pendants',
+  Bracelets: 'bracelets',
+  Anklets: 'anklets',
+  Sets: 'sets',
+  'Silver Rakhi': 'rakhi',
+};
+
+/* ── Featured visual selection (deterministic, stated rule) ──
+ * Per category: the most expensive piece with a single photo — hero pieces
+ * read as "the 3D moment". Ties break by catalog order. */
+export function featuredForType(type) {
+  const items = CATALOG.filter((p) => p.type === type);
+  if (!items.length) return null;
+  return [...items].sort(
+    (a, b) => b.price - a.price || items.indexOf(a) - items.indexOf(b)
+  )[0];
+}
+
+/* Hero panels: one most-expensive piece each from 5 distinct categories,
+ * preferring the categories whose pieces photograph largest (sets, pendants,
+ * earrings, bracelets, rings). Deterministic — no randomness. */
+export function heroPicks() {
+  const pref = ['Sets', 'Pendants', 'Earrings', 'Bracelets', 'Rings'];
+  return pref.map((t) => featuredForType(t)).filter(Boolean);
+}
+
+/* ── Category section lines — short original copy, from brand facts only ── */
+export const CATEGORY_LINES = {
+  Rings: 'Worn every day, not saved for occasions.',
+  Earrings: 'Silver that moves with you.',
+  Pendants: 'One piece, endless days.',
+  Bracelets: 'Real weight on the wrist.',
+  Anklets: 'A quiet detail, made in silver.',
+  Sets: 'Matched pairs, made to be worn together.',
+  'Silver Rakhi': 'Silver for the day that matters.',
+  'Toe Rings': 'Small silver, worn daily.',
+};
