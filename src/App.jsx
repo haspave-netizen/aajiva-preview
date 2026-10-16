@@ -17,7 +17,7 @@ import { productById, CATEGORY_LINES } from './data/catalog';
 
 /* Section roster — nav order. Rings folds in Toe Rings (both live at #rings). */
 const SECTIONS = [
-  { types: ['Rings', 'Toe Rings'], title: 'Rings', line: CATEGORY_LINES.Rings },
+  { types: ['Rings', 'Toe Rings'], title: 'Rings & Toe Rings', line: CATEGORY_LINES.Rings },
   { types: ['Earrings'], title: 'Earrings', line: CATEGORY_LINES.Earrings },
   { types: ['Pendants'], title: 'Pendants', line: CATEGORY_LINES.Pendants },
   { types: ['Bracelets'], title: 'Bracelets', line: CATEGORY_LINES.Bracelets },

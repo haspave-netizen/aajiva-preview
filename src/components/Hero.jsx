@@ -83,7 +83,7 @@ export default function Hero({ onPick }) {
 
       {/* tall vertical panels */}
       <div className="relative max-w-7xl mx-auto px-4 md:px-8 pb-16">
-        <div ref={rowRef} className="snap-row md:grid md:grid-cols-5 md:overflow-visible">
+        <div ref={rowRef} className="hero-row">
           {picks.map((p, i) => (
             <button
               key={p.id}

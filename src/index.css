@@ -84,6 +84,15 @@ body {
 .snap-row::-webkit-scrollbar { display: none; }
 .snap-row > * { scroll-snap-align: start; flex-shrink: 0; }
 
+/* hero panel row: 5-col grid on desktop, snap-scroll row on phones.
+   Plain CSS (unlayered) so it can never lose to utility layers. */
+.hero-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
+@media (max-width: 767px) {
+  .hero-row { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .hero-row::-webkit-scrollbar { display: none; }
+  .hero-row > * { scroll-snap-align: start; flex-shrink: 0; }
+}
+
 /* thin scrollbar for trays / panels */
 .thin-scroll::-webkit-scrollbar { width: 5px; height: 5px; }
 .thin-scroll::-webkit-scrollbar-thumb { background: var(--color-night-700); border-radius: 3px; }
